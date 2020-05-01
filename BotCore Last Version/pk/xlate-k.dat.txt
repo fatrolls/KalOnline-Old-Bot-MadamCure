@@ -1,0 +1,9 @@
+;(country_type KOR)
+(serverlist ( name "배달 서버[성인]")      ( IP "121.189.63.134") ( PORT "30001") ( config "")                              ( servernumber 1))
+(serverlist ( name "치우 서버[성인]")      ( IP "121.189.63.133") ( PORT "30001") ( config "")                              ( servernumber 2))
+(serverlist ( name "칼온라인 테스트 서버") ( IP "121.189.63.130") ( PORT "30001") ( config "" "debug" "test")               ( servernumber 0))
+
+(serverlist ( name "Kor Last Test")        ( IP "10.10.30.8")  ( PORT "30001") ( config "ALL" "customIP")                   ( servernumber 14))
+
+(serverlist ( name "Local LJH")            ( IP "10.10.10.8")  ( PORT "30001") ( config "ALL" "customIP" "cosmo")        ( servernumber 25))
+(serverlist ( name "Local KBR")            ( IP "10.10.10.55")  ( PORT "30001") ( config "ALL" "customIP" "cosmo")        ( servernumber 26))

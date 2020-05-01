@@ -1,0 +1,108 @@
+; 테스트 임무  필요 아이템 속성 그룹
+
+; (key x)    x : 그룹 인덱스
+; (script x) x : 해당 아이템의 기본 스크립트명
+; (item x y) x : 필요 아이템 인덱스 y : 필요 갯수
+
+;ex) (taskquest (key 2) (script s600002) (item 123 31) (item 1234 1))
+
+; 스크립트 제작시 반드시 아이템과 일치하여야 한다.
+; key 0번은 사용하지 않도록 한다. 0번은 테스크가 없을 때 값이다.
+
+(taskquest	(key 1)	(script s600001)	(item 171 25)	)
+(taskquest	(key 2)	(script s600002)	(item 173 15)	)
+(taskquest	(key 3)	(script s600003)	(item 174 10)	)
+(taskquest	(key 4)	(script s600004)	(item 175 10)	)
+(taskquest	(key 5)	(script s600005)	(item 176 10)	)
+(taskquest	(key 6)	(script s600006)	(item 177 10)	)
+(taskquest	(key 7)	(script s600007)	(item 178 10)	)
+(taskquest	(key 8)	(script s600008)	(item 179 10)	)
+(taskquest	(key 9)	(script s600009)	(item 162 10)	)
+(taskquest	(key 10)	(script s600010)	(item 180 10)	)
+(taskquest	(key 11)	(script s600011)	(item 163 10)	)
+(taskquest	(key 12)	(script s600012)	(item 181 5)	)
+(taskquest	(key 13)	(script s600013)	(item 227 20)	)
+(taskquest	(key 14)	(script s600014)	(item 228 10)	)
+(taskquest	(key 15)	(script s600015)	(item 229 10)	)
+(taskquest	(key 16)	(script s600016)	(item 230 5)	)
+(taskquest	(key 17)	(script s600017)	(item 231 5)	)
+(taskquest	(key 18)	(script s600018)	(item 232 10)	)
+(taskquest	(key 19)	(script s600019)	(item 233 5)	)
+
+;고레벨용 임무퀘스트 추가
+(taskquest	(key 20)	(script s600020)	(item 1366 50) 	)
+(taskquest	(key 21)	(script s600021)	(item 1367 40) 	)
+(taskquest	(key 22)	(script s600022)	(item 1368 40)	)
+(taskquest	(key 23)	(script s600023)	(item 1369 45)	)
+(taskquest	(key 24)	(script s600024)	(item 1370 15)	)
+
+(taskquest	(key 25)	(script s600025)	(item 1371 60)	)
+(taskquest	(key 26)	(script s600026)	(item 1372 30)	)
+(taskquest	(key 27)	(script s600027)	(item 1373 20)	)
+(taskquest	(key 28)	(script s600028)	(item 1374 10)	)
+(taskquest	(key 29)	(script s600029)	(item 1375 20)	)
+
+(taskquest	(key 30)	(script s600030)	(item 1376 20)	)
+(taskquest	(key 31)	(script s600031)	(item 1377 20)	)
+(taskquest	(key 32)	(script s600032)	(item 1378 40)	)
+(taskquest	(key 33)	(script s600033)	(item 1379 20)	)
+(taskquest	(key 34)	(script s600034)	(item 1380 10)	)
+
+(taskquest	(key 35)	(script s600035)	(item 1381 5)	)
+(taskquest	(key 36)	(script s600036)	(item 1382 10)	)
+(taskquest	(key 37)	(script s600037)	(item 1383 5)	)
+(taskquest	(key 38)	(script s600038)	(item 1384 20)	)
+(taskquest	(key 39)	(script s600039)	(item 1385 20)	)
+
+(taskquest	(key 40)	(script s600040)	(item 1386 40)	)
+(taskquest	(key 41)	(script s600041)	(item 1387 30)	)
+(taskquest	(key 42)	(script s600042)	(item 1388 10)	)
+(taskquest	(key 43)	(script s600043)	(item 1389 30)	)
+(taskquest	(key 44)	(script s600044)	(item 1390 10)	)
+
+(taskquest	(key 45)	(script s600045)	(item 1391 20)	)
+(taskquest	(key 46)	(script s600046)	(item 1392 5)	)
+(taskquest	(key 47)	(script s600047)	(item 1393 30)	)
+(taskquest	(key 48)	(script s600048)	(item 1394 20)	)
+(taskquest	(key 49)	(script s600049)	(item 1395 15)	)
+
+(taskquest	(key 50)	(script s600050)	(item 1396 5)	)
+(taskquest	(key 51)	(script s600051)	(item 1397 15)	)
+(taskquest	(key 52)	(script s600052)	(item 1398 5)	)
+(taskquest	(key 53)	(script s600053)	(item 1399 10)	)
+(taskquest	(key 54)	(script s600054)	(item 1400 15)	)
+
+(taskquest	(key 55)	(script s600055)	(item 1401 10)	)
+(taskquest	(key 56)	(script s600056)	(item 1402 20)	)
+(taskquest	(key 57)	(script s600057)	(item 1403 5)	)
+
+; 데바 임무
+(taskquest	(key 58)	(script s600058)	(item 1713 50) ) ; 미친 마구니 노역부 수급 50개
+(taskquest	(key 59)	(script s600059)	(item 1718 30) ) ; 멧돼지고기
+(taskquest	(key 60)	(script s600060)	(item 1719 1)(item 1720 1)(item 1721 1)(item 1722 1)(item 1723 1)(item 1724 1)(item 1725 1)(item 1726 1)(item 1727 1)(item 1728 1) )
+(taskquest	(key 61)	(script s600061)	(item 1731 80) ) ; 놀의 징표
+(taskquest	(key 62)	(script s600062)	(item 1738 50) ) ; 고블린 주술사 수급 
+
+; 데바 임무 2차
+
+(taskquest	(key 63)	(script s600063)	(item 1790 80)	)
+(taskquest	(key 64)	(script s600064)	(item 1791 100)	)
+(taskquest	(key 65)	(script s600065)	(item 1784 120)	)
+(taskquest	(key 66)	(script s600066)	(item 1792 150)	)
+(taskquest	(key 67)	(script s600067)	(item 1793 200)	)
+
+;혼델 임무
+(taskquest	(key 68)	(script s600068)	(item 2080 20)	)
+(taskquest	(key 69)	(script s600069)	(item 2081 20)	)
+(taskquest	(key 70)	(script s600070)	(item 2082 20)	)
+(taskquest	(key 71)	(script s600071)	(item 2083 20)	)
+(taskquest	(key 72)	(script s600072)	(item 2084 20)	)
+(taskquest	(key 73)	(script s600073)	(item 2085 20)	)
+(taskquest	(key 74)	(script s600074)	(item 2086 20)	)
+(taskquest	(key 75)	(script s600075)	(item 2087 10)	)
+(taskquest	(key 76)	(script s600076)	(item 2088 10)	)
+
+;천지연 임무문서
+(taskquest	(key 77)	(script s600077)	(item 2415 40)	) ;멧돼지 / 어금니 40개
+(taskquest	(key 78)	(script s600078)	(item 2416 40)	) ;늑대 / 피 40방울
+(taskquest	(key 79)	(script s600079)	(item 2420 40)	) ;상급 해골 병사 / 해골 병사 방패 40개
