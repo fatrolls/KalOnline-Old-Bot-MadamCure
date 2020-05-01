@@ -1,0 +1,8 @@
+;(country_type ENG)
+(serverlist ( name "Naraeha")     ( IP "222.111.213.25") ( PORT "30001") ( config  "") ( servernumber 1))
+(serverlist ( name "Hanin")       ( IP "222.111.213.22") ( PORT "30001") ( config  "") ( servernumber 2))
+
+(serverlist ( name "Eng Last Test")        ( IP "192.168.1.152")  ( PORT "30001") ( config "ALL" "customIP")                ( servernumber 15))
+
+(serverlist ( name "Local SGK")            ( IP "10.10.10.10")  ( PORT "30001") ( config "ALL" "customIP" "cosmo")        ( servernumber 25))
+(serverlist ( name "Local KBR")            ( IP "10.10.10.55")  ( PORT "30001") ( config "ALL" "customIP" "cosmo")        ( servernumber 26))

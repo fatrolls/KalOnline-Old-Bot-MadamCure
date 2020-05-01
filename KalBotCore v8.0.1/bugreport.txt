@@ -1,0 +1,983 @@
+date/time          : 2020-05-01, 13:01:23, 325ms
+computer name      : SYSTEM
+user name          : Roman
+registered owner   : Roman
+operating system   : Windows 7 x64 Service Pack 1 build 7601
+system language    : Thai
+system up time     : 2 days 3 hours
+program up time    : 100 milliseconds
+processors         : 12x Genuine Intel(R) CPU @ 3.30GHz
+physical memory    : 23678/32670 MB (free/total)
+free disk space    : (C:) 475.19 GB
+display mode       : 1600x900, 32 bit
+process id         : $13cc
+allocated memory   : 30.58 MB
+largest free block : 853.37 MB
+executable         : BotCore.exe
+exec. date/time    : 2014-12-30 16:53
+version            : 0.9.2.0
+compiled with      : Delphi 7
+madExcept version  : 4.0.11
+callstack crc      : $24d132aa, $e4cdf500, $4a7adcff
+exception number   : 1
+exception class    : EAccessViolation
+exception message  : Access violation at address 0052BBC4 in module 'BotCore.exe'. Read of address 00000000.
+
+main thread ($2138):
+0052bbc4 +014 BotCore.exe  Logs        68  +1 TStringLoggs.Save
+0052bab4 +014 BotCore.exe  Logs        49  +1 TStringLoggs.Destroy
+00403bd9 +041 BotCore.exe  System    9058 +36 @ClassCreate
+0045dbc0 +1a0 BotCore.exe  madExcept          SetLastException
+0045dd58 +0bc BotCore.exe  madExcept          SetLastExceptionHelper
+0045ddbe +05a BotCore.exe  madExcept          MyRaiseExceptProc
+0047c3d4 +0a8 BotCore.exe  Classes   5114  +5 TFileStream.Create
+0047c306 +02a BotCore.exe  Classes   5102  +2 TFileStream.Create
+0052ba20 +058 BotCore.exe  Logs        40  +5 TStringLoggs.Create
+00538031 +265 BotCore.exe  MainUnit   428 +39 TMainForm.FormCreate
+004e9e15 +031 BotCore.exe  Forms     2648  +3 TCustomForm.DoCreate
+004e9a85 +019 BotCore.exe  Forms     2575  +1 TCustomForm.AfterConstruction
+00403bf7 +007 BotCore.exe  System    9074  +1 @AfterConstruction
+004e9a52 +176 BotCore.exe  Forms     2569 +16 TCustomForm.Create
+004f2dac +03c BotCore.exe  Forms     6946  +4 TApplication.CreateForm
+0053cb1f +02f BotCore.exe  BotCore     62  +2 initialization
+75eb3378 +010 kernel32.dll                    BaseThreadInitThunk
+
+main thread ($2138), inner exception level 1:
+>> EFCreateError, Cannot create file "C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1\2020_05_01 13_01_23.txt". The process cannot access the file because it is being used by another process
+0047c3d4 +0a8 BotCore.exe  Classes  5114  +5 TFileStream.Create
+0047c306 +02a BotCore.exe  Classes  5102  +2 TFileStream.Create
+0052ba20 +058 BotCore.exe  Logs       40  +5 TStringLoggs.Create
+00538031 +265 BotCore.exe  MainUnit  428 +39 TMainForm.FormCreate
+004e9e15 +031 BotCore.exe  Forms    2648  +3 TCustomForm.DoCreate
+004e9a85 +019 BotCore.exe  Forms    2575  +1 TCustomForm.AfterConstruction
+00403bf7 +007 BotCore.exe  System   9074  +1 @AfterConstruction
+004e9a52 +176 BotCore.exe  Forms    2569 +16 TCustomForm.Create
+004f2dac +03c BotCore.exe  Forms    6946  +4 TApplication.CreateForm
+0053cb1f +02f BotCore.exe  BotCore    62  +2 initialization
+75eb3378 +010 kernel32.dll                   BaseThreadInitThunk
+
+thread $1378: <priority:1>
+77c9f992 +0e ntdll.dll              NtRemoveIoCompletion
+0045f421 +0d BotCore.exe  madExcept CallThreadProcSafe
+0045f48b +37 BotCore.exe  madExcept ThreadExceptFrame
+75eb3378 +10 kernel32.dll           BaseThreadInitThunk
+>> created by main thread ($2138) at:
+7379a34f +00 mswsock.dll
+
+thread $18a4:
+>> stack not accessible
+
+thread $1288:
+77ca1f7f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75eb3378 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1774:
+77ca0196 +0e ntdll.dll     NtWaitForMultipleObjects
+75eb3378 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1868:
+77ca1f7f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75eb3378 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1024:
+77ca1f7f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75eb3378 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 BotCore.exe    0.9.2.0            C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1
+10000000 FreeImage.dll  3.16.0.0           C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1
+458a0000 npggNT.des     2020.2.24.1        C:\Games\Atlantica International\GameGuard
+63080000 libeay32.dll   0.9.8.8            C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1
+68320000 FaultRep.dll   6.1.7601.17514     C:\Windows\system32
+6a290000 cscapi.dll     6.1.7601.17514     C:\Windows\system32
+6ce60000 comctl32.dll   5.82.7601.18837    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.18837_none_ec86b8d6858ec0bc
+6da10000 wkscli.dll     6.1.7601.17514     C:\Windows\system32
+6da20000 srvcli.dll     6.1.7601.17514     C:\Windows\system32
+6da40000 netutils.dll   6.1.7601.17514     C:\Windows\system32
+6da50000 NETAPI32.dll   6.1.7601.17887     C:\Windows\system32
+6fd20000 uxtheme.dll    6.1.7600.16385     C:\Windows\system32
+71600000 wsock32.dll    6.1.7600.16385     C:\Windows\system32
+71850000 propsys.dll    7.0.7601.17514     C:\Windows\system32
+72f00000 wshtcpip.dll   6.1.7600.16385     C:\Windows\System32
+73790000 mswsock.dll    6.1.7601.18254     C:\Windows\system32
+73d70000 comctl32.dll   6.10.7601.18837    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d
+73f10000 version.dll    6.1.7600.16385     C:\Windows\system32
+75080000 winmm.dll      6.1.7601.17514     C:\Windows\system32
+75350000 ntmarta.dll    6.1.7600.16385     C:\Windows\system32
+755e0000 CRYPTBASE.dll  6.1.7601.19018     C:\Windows\syswow64
+755f0000 SspiCli.dll    6.1.7601.19007     C:\Windows\syswow64
+75650000 MSASN1.dll     6.1.7601.17514     C:\Windows\syswow64
+75660000 KERNELBASE.dll 6.1.7601.19018     C:\Windows\syswow64
+756b0000 ADVAPI32.dll   6.1.7601.18939     C:\Windows\syswow64
+75760000 IMM32.DLL      6.1.7601.17514     C:\Windows\system32
+757c0000 WLDAP32.dll    6.1.7601.17514     C:\Windows\syswow64
+75870000 WINTRUST.dll   6.1.7601.18741     C:\Windows\syswow64
+758a0000 NSI.dll        6.1.7600.16385     C:\Windows\syswow64
+758b0000 SETUPAPI.dll   6.1.7601.17514     C:\Windows\syswow64
+75c60000 DEVOBJ.dll     6.1.7601.17621     C:\Windows\syswow64
+75ca0000 USP10.dll      1.626.7601.18454   C:\Windows\syswow64
+75d40000 CFGMGR32.dll   6.1.7601.17621     C:\Windows\syswow64
+75d70000 msvcrt.dll     7.0.7601.17744     C:\Windows\syswow64
+75e20000 comdlg32.dll   6.1.7601.17514     C:\Windows\syswow64
+75ea0000 kernel32.dll   6.1.7601.19018     C:\Windows\syswow64
+76200000 RPCRT4.dll     6.1.7601.19018     C:\Windows\syswow64
+762f0000 CLBCatQ.DLL    2001.12.8530.16385 C:\Windows\syswow64
+764e0000 shell32.dll    6.1.7601.18952     C:\Windows\syswow64
+77140000 LPK.dll        6.1.7601.18985     C:\Windows\syswow64
+77150000 sechost.dll    6.1.7600.16385     C:\Windows\SysWOW64
+77180000 WS2_32.dll     6.1.7601.17514     C:\Windows\syswow64
+771c0000 SHLWAPI.dll    6.1.7601.17514     C:\Windows\syswow64
+77220000 GDI32.dll      6.1.7601.18898     C:\Windows\syswow64
+77340000 user32.dll     6.1.7601.17514     C:\Windows\syswow64
+77470000 CRYPT32.dll    6.1.7601.18741     C:\Windows\syswow64
+775a0000 ole32.dll      6.1.7601.18915     C:\Windows\syswow64
+77710000 MSCTF.dll      6.1.7601.18731     C:\Windows\syswow64
+777e0000 oleaut32.dll   6.1.7601.18679     C:\Windows\syswow64
+77c80000 ntdll.dll      6.1.7601.19018     C:\Windows\SysWOW64
+
+processes:
+0000 Idle                       0 0    0
+0004 System                     0 0    0
+0198 smss.exe                   0 0    0
+0244 csrss.exe                  0 0    0
+0284 wininit.exe                0 0    0
+029c csrss.exe                  1 0    0
+02c8 services.exe               0 0    0
+02e0 lsass.exe                  0 0    0
+02f0 lsm.exe                    0 0    0
+02f8 winlogon.exe               1 0    0
+0374 svchost.exe                0 0    0
+03c0 svchost.exe                0 0    0
+03fc atiesrxx.exe               0 0    0
+01bc svchost.exe                0 0    0
+02a0 svchost.exe                0 0    0
+03d0 svchost.exe                0 0    0
+0414 svchost.exe                0 0    0
+0494 svchost.exe                0 0    0
+04f4 SbieSvc.exe                0 0    0
+05e8 atieclxx.exe               1 0    0
+0638 svchost.exe                0 0    0
+0708 wlanext.exe                0 0    0
+0710 conhost.exe                0 0    0
+07b4 spoolsv.exe                0 0    0
+07d0 svchost.exe                0 0    0
+07d8 dwm.exe                    1 6    2   normal
+07f8 taskhost.exe               1 72   41  normal
+069c explorer.exe               1 1184 802 normal
+084c atkexComSvc.exe            0 0    0
+0934 DTSU2PAuSrv64.exe          0 0    0
+096c HTTPDebuggerSvc.exe        0 0    0
+09ac IpOverUsbSvc.exe           0 0    0
+0abc vpnclient_x64.exe          0 0    0
+0ad4 svchost.exe                0 0    0
+0b00 TeamViewer_Service.exe     0 0    0
+0ba0 RtkNGUI64.exe              1 31   28  normal
+0ba8 RAVBg64.exe                1 20   14  normal
+0bc0 wmdcBase.exe               1 4    3   normal
+0bcc vpnclient_x64.exe          1 481  166 normal
+06a4 rundll32.exe               1 10   6   normal
+0b38 lightscreen.exe            1 21   32  normal       C:\Program Files (x86)\Lightscreen
+07ac CCXProcess.exe             1 4    0   normal       C:\Program Files (x86)\Adobe\Adobe Creative Cloud Experience
+0b80 node.exe                   1 4    4   normal       C:\Program Files (x86)\Adobe\Adobe Creative Cloud Experience\libs
+06dc conhost.exe                1 21   3   normal
+09dc vmnat.exe                  0 0    0
+0c6c vmware-authd.exe           0 0    0
+0ce8 vmnetdhcp.exe              0 0    0
+0d00 vmware-usbarbitrator64.exe 0 0    0
+0e70 svchost.exe                0 0    0
+0eec svchost.exe                0 0    0
+0f64 WUDFHost.exe               0 0    0
+1074 AdobeIPCBroker.exe         1 4    7   normal       C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\IPCBox
+031c svchost.exe                0 0    0
+2248 audiodg.exe                0 0    0
+0cb4 GameMon.des                1 0    0
+2010 GameMon64.des              1 0    0
+210c AikaClient.exe             1 43   172 normal
+1d44 Atlantica.exe              1 0    0
+232c Atlantica.exe              1 0    0
+112c chrome.exe                 1 94   90  normal
+18d8 chrome.exe                 1 4    4   normal
+2060 chrome.exe                 1 15   8   above normal
+156c chrome.exe                 1 4    1   normal
+2230 chrome.exe                 1 4    1   idle
+1010 chrome.exe                 1 4    1   normal
+20d0 chrome.exe                 1 4    1   normal
+11c4 chrome.exe                 1 4    1   normal
+17fc chrome.exe                 1 4    1   idle
+2380 chrome.exe                 1 4    1   idle
+148c chrome.exe                 1 4    1   idle
+1b64 chrome.exe                 1 4    1   normal
+13c8 chrome.exe                 1 4    1   normal
+0ae0 chrome.exe                 1 4    3   normal
+1718 chrome.exe                 1 4    1   normal
+23e0 chrome.exe                 1 4    1   idle
+13e0 chrome.exe                 1 4    1   idle
+0358 chrome.exe                 1 4    1   idle
+22e4 dllhost.exe                1 4    5   normal
+13cc BotCore.exe                1 70   84  normal       C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1
+
+hardware:
++ Bluetooth Radios
+  - Bluetooth USB module (driver 6.5.1.5800)
+  - Microsoft Bluetooth Enumerator
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - WDC WD1001FALS-00J7B SCSI Disk Device
+  - WDC WD30PURX-64P6ZY0 SCSI Disk Device
++ Display adapters
+  - AMD Radeon R7 200 Series (driver 15.200.1062.1004)
++ DVD/CD-ROM drives
+  - ATAPI DVD A  DH24ACSH SCSI CdRom Device
++ Human Interface Devices
+  - HID-compliant consumer control device
+  - HID-compliant consumer control device
+  - HID-compliant device
+  - USB Input Device
+  - USB Input Device
+  - USB Input Device
++ IDE ATA/ATAPI controllers
+  - Intel(R) 9 Series Chipset Family SATA AHCI Controller (driver 13.1.0.1058)
++ Keyboards
+  - HID Keyboard Device
++ Mice and other pointing devices
+  - HID-compliant mouse
++ Monitors
+  - Generic PnP Monitor
++ Network adapters
+  - Bluetooth Device (Personal Area Network)
+  - Bluetooth Device (RFCOMM Protocol TDI)
+  - Broadcom 802.11ac Network Adapter (driver 6.34.223.5)
+  - Intel(R) Ethernet Connection (2) I218-V (driver 12.12.80.19)
+  - Intel(R) I211 Gigabit Network Connection (driver 12.11.97.0)
+  - Microsoft 6to4 Adapter
+  - Microsoft ISATAP Adapter
+  - Microsoft ISATAP Adapter #2
+  - Microsoft ISATAP Adapter #3
+  - Microsoft ISATAP Adapter #4
+  - Microsoft ISATAP Adapter #5
+  - Microsoft ISATAP Adapter #6
+  - Microsoft ISATAP Adapter #7
+  - Microsoft ISATAP Adapter #8
+  - Microsoft ISATAP Adapter #9
+  - Microsoft Virtual WiFi Miniport Adapter
+  - Teredo Tunneling Pseudo-Interface
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.2.3.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.2.3.0)
+  - VPN Client Adapter - VPN (driver 4.25.0.9658)
+  - VPN Client Adapter - VPN2 (driver 4.19.0.9594)
+  - VPN Client Adapter - VPN3 (driver 4.25.0.9658)
+  - WAN Miniport (IKEv2)
+  - WAN Miniport (IP)
+  - WAN Miniport (IPv6)
+  - WAN Miniport (L2TP)
+  - WAN Miniport (Network Monitor)
+  - WAN Miniport (PPPOE)
+  - WAN Miniport (PPTP)
+  - WAN Miniport (SSTP)
++ Processors
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
++ Sound, video and game controllers
+  - AMD High Definition Audio Device (driver 7.12.0.7723)
+  - Realtek High Definition Audio (driver 6.0.1.7982)
++ Storage controllers
+  - Asmedia 106x SATA Controller (driver 3.1.6.0)
++ Storage volume shadow copies
+  - Generic volume shadow copy
+  - Generic volume shadow copy
++ System devices
+  - ACPI Fixed Feature Button
+  - ACPI Module Device
+  - ACPI Module Device
+  - ACPI Module Device
+  - ACPI Module Device
+  - ACPI Power Button
+  - Advanced programmable interrupt controller
+  - AMDA00 Interface (driver 1.0.1.0)
+  - Composite Bus Enumerator
+  - Direct memory access controller
+  - File as Volume Driver
+  - High Definition Audio Controller
+  - High Definition Audio Controller
+  - High precision event timer
+  - Intel(R) C610 series/X99 chipset SMBus Controller - 8D22 (driver 9.4.2.1013)
+  - Intel(R) C610 series/X99 chipset SPSR - 8D7C (driver 9.4.2.1013)
+  - Intel(R) Management Engine Interface  (driver 11.0.0.1166)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Address Map VTd_Misc System Management - 2F28 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FF8 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FF9 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FFA (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FFB (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBE (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBF (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FB8 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FB9 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FBA (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FBB (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO Channel 0/1 Broadcast - 2FAE (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO Channel 2/3 Broadcast - 2F6E (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO Global Broadcast - 2F6F (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO Global Broadcast - 2FAF (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Home Agent 0 - 2F30 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Home Agent 0 - 2FA0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Home Agent 1 - 2F38 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Home Agent 1 - 2F60 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Hot Plug - 2F29 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 I/O APIC - 2F2C (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 ERROR Registers - 2FB2 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 Thermal Control - 2FB0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 ERROR Registers - 2FB3 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 Thermal Control - 2FB1 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 2 ERROR Registers - 2FB6 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 2 Thermal Control - 2FB4 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 3 ERROR Registers - 2FB7 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 3 Thermal Control - 2FB5 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder - 2FAA (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder - 2FAB (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder - 2FAC (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder - 2FAD (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Target Address / Thermal / RAS Registers - 2F71 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Target Address / Thermal / RAS Registers - 2FA8 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 ERROR Registers - 2FD2 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 Thermal Control - 2FD0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 ERROR Registers - 2FD3 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 Thermal Control - 2FD1 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 2 ERROR Registers - 2FD6 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 2 Thermal Control - 2FD4 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 3 ERROR Registers - 2FD7 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 3 Thermal Control - 2FD5 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder - 2F6A (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder - 2F6B (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder - 2F6C (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder - 2F6D (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Target Address / Thermal / RAS Registers - 2F68 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Target Address / Thermal / RAS Registers - 2F79 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 PCIe Ring Interface - 2F1D (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 PCIe Ring Interface - 2F34 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2F98 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2F99 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2F9A (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2F9C (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2FC0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F36 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F37 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F81 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 RAS Control Status and Global Errors - 2F2A (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F1E (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F1F (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F7D (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFC (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFD (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFE (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE1 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE2 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE3 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE4 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE5 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 VCU - 2F88 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 VCU - 2F8A (driver 9.4.2.1018)
+  - IPBusEnum Root Enumerator
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft Virtual Drive Enumerator Driver
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Motherboard resources
+  - Motherboard resources
+  - Numeric data processor
+  - Pci Bus (driver 15.20.0.0)
+  - Pci Bus (driver 15.20.0.0)
+  - PCI standard host CPU bridge
+  - PCI standard ISA bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - Plug and Play Software Device Enumerator
+  - Programmable interrupt controller
+  - Remote Desktop Device Redirector Bus
+  - System CMOS/real time clock
+  - System speaker
+  - System timer
+  - Terminal Server Keyboard Driver
+  - Terminal Server Mouse Driver
+  - UMBus Enumerator
+  - UMBus Enumerator
+  - UMBus Root Bus Enumerator
+  - VMware VMCI Host Device (driver 9.7.1.0)
+  - Volume Manager
++ Universal Serial Bus controllers
+  - ASMedia XHCI 1.0 Controller (driver 1.16.24.0)
+  - Generic USB Hub
+  - Generic USB Hub
+  - Generic USB Hub
+  - Generic USB Hub
+  - Generic USB Hub
+  - Intel(R) USB 3.0 eXtensible Host Controller (driver 4.0.0.36)
+  - Intel(R) USB 3.0 Root Hub (driver 4.0.0.36)
+  - Standard Enhanced PCI to USB Host Controller
+  - Standard Enhanced PCI to USB Host Controller
+  - USB Composite Device
+  - USB Root Hub (driver 1.16.24.0)
+  - USB Root Hub
+  - USB Root Hub
+
+cpu registers:
+eax = 02430d28
+ebx = 00000000
+ecx = 00000001
+edx = 0047c3d9
+esi = 00000000
+edi = 00000000
+eip = 0047c3d9
+esp = 0018fcc8
+ebp = 0018fd34
+
+stack dump:
+0018fcc8  d9 c3 47 00 de fa ed 0e - 01 00 00 00 07 00 00 00  ..G.............
+0018fcd8  dc fc 18 00 d9 c3 47 00 - 28 0d 43 02 00 00 00 00  ......G.(.C.....
+0018fce8  00 00 00 00 00 00 00 00 - 34 fd 18 00 f8 fc 18 00  ........4.......
+0018fcf8  44 fd 18 00 f8 3f 40 00 - 34 fd 18 00 58 2e 40 02  D....?@.4...X.@.
+0018fd08  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fd18  98 5e 43 02 0b 00 00 00 - 70 aa 44 02 0b 62 47 00  .^C.....p.D..bG.
+0018fd28  f0 a9 44 02 58 2e 40 00 - 00 90 43 02 60 fd 18 00  ..D.X.@...C.`...
+0018fd38  0b c3 47 00 00 00 00 00 - ff ff 43 02 6c fd 18 00  ..G.......C.l...
+0018fd48  37 41 40 00 60 fd 18 00 - 00 90 43 02 f0 a9 44 02  7A@.`.....C...D.
+0018fd58  00 00 00 01 00 90 43 02 - 88 fd 18 00 25 ba 52 00  ......C.....%.R.
+0018fd68  ff ff 00 00 90 fd 18 00 - f8 3f 40 00 88 fd 18 00  .........?@.....
+0018fd78  0c aa 44 02 f0 a9 44 02 - 27 80 53 01 0c aa 44 02  ..D...D.'.S...D.
+0018fd88  d0 fd 18 00 36 80 53 00 - d8 fd 18 00 f8 3f 40 00  ....6.S......?@.
+0018fd98  d0 fd 18 00 00 00 00 00 - 00 00 00 00 58 2e 40 02  ............X.@.
+0018fda8  03 c7 46 00 96 c6 46 00 - 00 00 00 00 00 00 00 00  ..F...F.........
+0018fdb8  c8 fd 38 21 d0 fd 18 00 - 00 00 00 00 58 2e 40 02  ..8!........X.@.
+0018fdc8  00 00 00 00 58 2e 40 02 - f4 fd 18 00 1b 9e 4e 00  ....X.@.......N.
+0018fdd8  14 fe 18 00 18 3e 40 00 - f4 fd 18 00 00 00 00 00  .....>@.........
+0018fde8  00 00 00 00 58 2e 40 02 - 58 2e 40 02 04 fe 18 00  ....X.@.X.@.....
+0018fdf8  8b 9a 4e 00 00 00 00 00 - 58 2e 40 02 40 ff 18 00  ..N.....X.@.@...
+
+disassembling:
+[...]
+0047c3c0        push    1
+0047c3c2        mov     ecx, [$55b704]
+0047c3c8        mov     dl, 1
+0047c3ca        mov     eax, [$475524]
+0047c3cf        call    -$117fc ($46abd8)      ; SysUtils.Exception.CreateResFmt
+0047c3d4      > call    -$78315 ($4040c4)      ; System.@RaiseExcept
+0047c3d9        jmp     loc_47c445
+0047c3db 5118   movzx   edx, word ptr [ebp+$c]
+0047c3df        mov     eax, [ebp-$c]
+0047c3e2        call    -$15663 ($466d84)      ; SysUtils.FileOpen
+0047c3e7        mov     ecx, eax
+[...]
+
+date/time          : 2020-05-01, 13:01:38, 930ms
+computer name      : SYSTEM
+user name          : Roman
+registered owner   : Roman
+operating system   : Windows 7 x64 Service Pack 1 build 7601
+system language    : Thai
+system up time     : 2 days 3 hours
+program up time    : 15 seconds
+processors         : 12x Genuine Intel(R) CPU @ 3.30GHz
+physical memory    : 23674/32670 MB (free/total)
+free disk space    : (C:) 475.19 GB
+display mode       : 1600x900, 32 bit
+process id         : $13cc
+allocated memory   : 39.01 MB
+largest free block : 853.37 MB
+executable         : BotCore.exe
+exec. date/time    : 2014-12-30 16:53
+version            : 0.9.2.0
+compiled with      : Delphi 7
+madExcept version  : 4.0.11
+callstack crc      : $b2c5be9b, $7c68ec2a, $7c68ec2a
+count              : 5
+exception number   : 6
+exception class    : EAccessViolation
+exception message  : Access violation at address 005357E0 in module 'BotCore.exe'. Read of address 00000040.
+
+main thread ($2138):
+005357e0 +0c BotCore.exe  PlayersUnit   843  +1 TPlayers.IsHeroAlive
+0053c3a1 +15 BotCore.exe  MainUnit     1691  +1 TMainForm.ActSaveRevivalPointUpdate
+00483ecd +1d BotCore.exe  Classes     10474  +3 TBasicAction.Update
+004dabfb +3f BotCore.exe  ActnList      382  +1 TContainedAction.Update
+00483d25 +11 BotCore.exe  Classes     10418  +1 TBasicActionLink.Update
+004cdff0 +18 BotCore.exe  Controls     5220  +1 TControl.InitiateAction
+004eefde +52 BotCore.exe  Forms        4865  +6 TraverseClients
+004eeffa +6e BotCore.exe  Forms        4867  +8 TraverseClients
+004ef093 +87 BotCore.exe  Forms        4881 +10 TCustomForm.UpdateActions
+004f35cc +68 BotCore.exe  Forms        7163  +5 TApplication.DoActionIdle
+004f3739 +ad BotCore.exe  Forms        7198  +8 TApplication.Idle
+004f2c1e +1e BotCore.exe  Forms        6891  +1 TApplication.HandleMessage
+004f2eaa +a6 BotCore.exe  Forms        6975 +16 TApplication.Run
+0053cb5b +6b BotCore.exe  BotCore        66  +6 initialization
+75eb3378 +10 kernel32.dll                       BaseThreadInitThunk
+
+thread $1378: <priority:1>
+77c9f992 +0e ntdll.dll              NtRemoveIoCompletion
+0045f421 +0d BotCore.exe  madExcept CallThreadProcSafe
+0045f48b +37 BotCore.exe  madExcept ThreadExceptFrame
+75eb3378 +10 kernel32.dll           BaseThreadInitThunk
+>> created by main thread ($2138) at:
+7379a34f +00 mswsock.dll
+
+thread $1288:
+77ca1f7f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75eb3378 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1774:
+77ca0196 +0e ntdll.dll     NtWaitForMultipleObjects
+75eb3378 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1868:
+77ca1f7f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75eb3378 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1024:
+77ca1f7f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75eb3378 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1ef0:
+77c9f90a +0e ntdll.dll                NtWaitForSingleObject
+756714a5 +92 KERNELBASE.dll           WaitForSingleObjectEx
+75eb118f +3e kernel32.dll             WaitForSingleObjectEx
+75eb1143 +0d kernel32.dll             WaitForSingleObject
+0045f421 +0d BotCore.exe    madExcept CallThreadProcSafe
+0045f48b +37 BotCore.exe    madExcept ThreadExceptFrame
+75eb3378 +10 kernel32.dll             BaseThreadInitThunk
+>> created by thread $18a4 at:
+458b8cc2 +00 npggNT.des
+
+modules:
+00400000 BotCore.exe    0.9.2.0            C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1
+10000000 FreeImage.dll  3.16.0.0           C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1
+458a0000 npggNT.des     2020.2.24.1        C:\Games\Atlantica International\GameGuard
+63080000 libeay32.dll   0.9.8.8            C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1
+68320000 FaultRep.dll   6.1.7601.17514     C:\Windows\system32
+6a290000 cscapi.dll     6.1.7601.17514     C:\Windows\system32
+6ce60000 comctl32.dll   5.82.7601.18837    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.18837_none_ec86b8d6858ec0bc
+6da10000 wkscli.dll     6.1.7601.17514     C:\Windows\system32
+6da20000 srvcli.dll     6.1.7601.17514     C:\Windows\system32
+6da40000 netutils.dll   6.1.7601.17514     C:\Windows\system32
+6da50000 NETAPI32.dll   6.1.7601.17887     C:\Windows\system32
+6fd20000 uxtheme.dll    6.1.7600.16385     C:\Windows\system32
+71600000 wsock32.dll    6.1.7600.16385     C:\Windows\system32
+71850000 propsys.dll    7.0.7601.17514     C:\Windows\system32
+72f00000 wshtcpip.dll   6.1.7600.16385     C:\Windows\System32
+73790000 mswsock.dll    6.1.7601.18254     C:\Windows\system32
+73d70000 comctl32.dll   6.10.7601.18837    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d
+73f10000 version.dll    6.1.7600.16385     C:\Windows\system32
+75080000 winmm.dll      6.1.7601.17514     C:\Windows\system32
+75350000 ntmarta.dll    6.1.7600.16385     C:\Windows\system32
+755e0000 CRYPTBASE.dll  6.1.7601.19018     C:\Windows\syswow64
+755f0000 SspiCli.dll    6.1.7601.19007     C:\Windows\syswow64
+75650000 MSASN1.dll     6.1.7601.17514     C:\Windows\syswow64
+75660000 KERNELBASE.dll 6.1.7601.19018     C:\Windows\syswow64
+756b0000 ADVAPI32.dll   6.1.7601.18939     C:\Windows\syswow64
+75760000 IMM32.DLL      6.1.7601.17514     C:\Windows\system32
+757c0000 WLDAP32.dll    6.1.7601.17514     C:\Windows\syswow64
+75870000 WINTRUST.dll   6.1.7601.18741     C:\Windows\syswow64
+758a0000 NSI.dll        6.1.7600.16385     C:\Windows\syswow64
+758b0000 SETUPAPI.dll   6.1.7601.17514     C:\Windows\syswow64
+75c60000 DEVOBJ.dll     6.1.7601.17621     C:\Windows\syswow64
+75ca0000 USP10.dll      1.626.7601.18454   C:\Windows\syswow64
+75d40000 CFGMGR32.dll   6.1.7601.17621     C:\Windows\syswow64
+75d70000 msvcrt.dll     7.0.7601.17744     C:\Windows\syswow64
+75e20000 comdlg32.dll   6.1.7601.17514     C:\Windows\syswow64
+75ea0000 kernel32.dll   6.1.7601.19018     C:\Windows\syswow64
+76200000 RPCRT4.dll     6.1.7601.19018     C:\Windows\syswow64
+762f0000 CLBCatQ.DLL    2001.12.8530.16385 C:\Windows\syswow64
+764e0000 shell32.dll    6.1.7601.18952     C:\Windows\syswow64
+77140000 LPK.dll        6.1.7601.18985     C:\Windows\syswow64
+77150000 sechost.dll    6.1.7600.16385     C:\Windows\SysWOW64
+77170000 psapi.dll      6.1.7600.16385     C:\Windows\syswow64
+77180000 WS2_32.dll     6.1.7601.17514     C:\Windows\syswow64
+771c0000 SHLWAPI.dll    6.1.7601.17514     C:\Windows\syswow64
+77220000 GDI32.dll      6.1.7601.18898     C:\Windows\syswow64
+77340000 user32.dll     6.1.7601.17514     C:\Windows\syswow64
+77470000 CRYPT32.dll    6.1.7601.18741     C:\Windows\syswow64
+775a0000 ole32.dll      6.1.7601.18915     C:\Windows\syswow64
+77710000 MSCTF.dll      6.1.7601.18731     C:\Windows\syswow64
+777e0000 oleaut32.dll   6.1.7601.18679     C:\Windows\syswow64
+77c80000 ntdll.dll      6.1.7601.19018     C:\Windows\SysWOW64
+
+processes:
+0000 Idle                       0 0    0
+0004 System                     0 0    0
+0198 smss.exe                   0 0    0
+0244 csrss.exe                  0 0    0
+0284 wininit.exe                0 0    0
+029c csrss.exe                  1 0    0
+02c8 services.exe               0 0    0
+02e0 lsass.exe                  0 0    0
+02f0 lsm.exe                    0 0    0
+02f8 winlogon.exe               1 0    0
+0374 svchost.exe                0 0    0
+03c0 svchost.exe                0 0    0
+03fc atiesrxx.exe               0 0    0
+01bc svchost.exe                0 0    0
+02a0 svchost.exe                0 0    0
+03d0 svchost.exe                0 0    0
+0414 svchost.exe                0 0    0
+0494 svchost.exe                0 0    0
+04f4 SbieSvc.exe                0 0    0
+05e8 atieclxx.exe               1 0    0
+0638 svchost.exe                0 0    0
+0708 wlanext.exe                0 0    0
+0710 conhost.exe                0 0    0
+07b4 spoolsv.exe                0 0    0
+07d0 svchost.exe                0 0    0
+07d8 dwm.exe                    1 6    2   normal
+07f8 taskhost.exe               1 90   45  normal
+069c explorer.exe               1 1177 793 normal
+084c atkexComSvc.exe            0 0    0
+0934 DTSU2PAuSrv64.exe          0 0    0
+096c HTTPDebuggerSvc.exe        0 0    0
+09ac IpOverUsbSvc.exe           0 0    0
+0abc vpnclient_x64.exe          0 0    0
+0ad4 svchost.exe                0 0    0
+0b00 TeamViewer_Service.exe     0 0    0
+0ba0 RtkNGUI64.exe              1 31   28  normal
+0ba8 RAVBg64.exe                1 20   14  normal
+0bc0 wmdcBase.exe               1 4    3   normal
+0bcc vpnclient_x64.exe          1 481  166 normal
+06a4 rundll32.exe               1 10   6   normal
+0b38 lightscreen.exe            1 21   31  normal       C:\Program Files (x86)\Lightscreen
+07ac CCXProcess.exe             1 4    0   normal       C:\Program Files (x86)\Adobe\Adobe Creative Cloud Experience
+0b80 node.exe                   1 4    4   normal       C:\Program Files (x86)\Adobe\Adobe Creative Cloud Experience\libs
+06dc conhost.exe                1 21   3   normal
+09dc vmnat.exe                  0 0    0
+0c6c vmware-authd.exe           0 0    0
+0ce8 vmnetdhcp.exe              0 0    0
+0d00 vmware-usbarbitrator64.exe 0 0    0
+0e70 svchost.exe                0 0    0
+0eec svchost.exe                0 0    0
+0f64 WUDFHost.exe               0 0    0
+1074 AdobeIPCBroker.exe         1 4    7   normal       C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\IPCBox
+031c svchost.exe                0 0    0
+2248 audiodg.exe                0 0    0
+0cb4 GameMon.des                1 0    0
+2010 GameMon64.des              1 0    0
+210c AikaClient.exe             1 43   172 normal
+1d44 Atlantica.exe              1 0    0
+232c Atlantica.exe              1 0    0
+112c chrome.exe                 1 92   89  normal
+18d8 chrome.exe                 1 4    4   normal
+2060 chrome.exe                 1 13   8   above normal
+156c chrome.exe                 1 4    1   normal
+2230 chrome.exe                 1 4    1   idle
+1010 chrome.exe                 1 4    1   normal
+20d0 chrome.exe                 1 4    1   normal
+11c4 chrome.exe                 1 4    1   normal
+17fc chrome.exe                 1 4    1   idle
+2380 chrome.exe                 1 4    1   idle
+148c chrome.exe                 1 4    1   idle
+1b64 chrome.exe                 1 4    1   normal
+13c8 chrome.exe                 1 4    1   normal
+0ae0 chrome.exe                 1 4    3   normal
+1718 chrome.exe                 1 4    1   normal
+23e0 chrome.exe                 1 4    1   idle
+13e0 chrome.exe                 1 4    1   idle
+0358 chrome.exe                 1 4    1   idle
+13cc BotCore.exe                1 97   169 normal       C:\Users\Roman\Desktop\Old bot Delphi\KalBotCore v8.0.1
+
+hardware:
++ Bluetooth Radios
+  - Bluetooth USB module (driver 6.5.1.5800)
+  - Microsoft Bluetooth Enumerator
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - WDC WD1001FALS-00J7B SCSI Disk Device
+  - WDC WD30PURX-64P6ZY0 SCSI Disk Device
++ Display adapters
+  - AMD Radeon R7 200 Series (driver 15.200.1062.1004)
++ DVD/CD-ROM drives
+  - ATAPI DVD A  DH24ACSH SCSI CdRom Device
++ Human Interface Devices
+  - HID-compliant consumer control device
+  - HID-compliant consumer control device
+  - HID-compliant device
+  - USB Input Device
+  - USB Input Device
+  - USB Input Device
++ IDE ATA/ATAPI controllers
+  - Intel(R) 9 Series Chipset Family SATA AHCI Controller (driver 13.1.0.1058)
++ Keyboards
+  - HID Keyboard Device
++ Mice and other pointing devices
+  - HID-compliant mouse
++ Monitors
+  - Generic PnP Monitor
++ Network adapters
+  - Bluetooth Device (Personal Area Network)
+  - Bluetooth Device (RFCOMM Protocol TDI)
+  - Broadcom 802.11ac Network Adapter (driver 6.34.223.5)
+  - Intel(R) Ethernet Connection (2) I218-V (driver 12.12.80.19)
+  - Intel(R) I211 Gigabit Network Connection (driver 12.11.97.0)
+  - Microsoft 6to4 Adapter
+  - Microsoft ISATAP Adapter
+  - Microsoft ISATAP Adapter #2
+  - Microsoft ISATAP Adapter #3
+  - Microsoft ISATAP Adapter #4
+  - Microsoft ISATAP Adapter #5
+  - Microsoft ISATAP Adapter #6
+  - Microsoft ISATAP Adapter #7
+  - Microsoft ISATAP Adapter #8
+  - Microsoft ISATAP Adapter #9
+  - Microsoft Virtual WiFi Miniport Adapter
+  - Teredo Tunneling Pseudo-Interface
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.2.3.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.2.3.0)
+  - VPN Client Adapter - VPN (driver 4.25.0.9658)
+  - VPN Client Adapter - VPN2 (driver 4.19.0.9594)
+  - VPN Client Adapter - VPN3 (driver 4.25.0.9658)
+  - WAN Miniport (IKEv2)
+  - WAN Miniport (IP)
+  - WAN Miniport (IPv6)
+  - WAN Miniport (L2TP)
+  - WAN Miniport (Network Monitor)
+  - WAN Miniport (PPPOE)
+  - WAN Miniport (PPTP)
+  - WAN Miniport (SSTP)
++ Processors
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
+  - Genuine Intel(R) CPU @ 3.30GHz
++ Sound, video and game controllers
+  - AMD High Definition Audio Device (driver 7.12.0.7723)
+  - Realtek High Definition Audio (driver 6.0.1.7982)
++ Storage controllers
+  - Asmedia 106x SATA Controller (driver 3.1.6.0)
++ Storage volume shadow copies
+  - Generic volume shadow copy
+  - Generic volume shadow copy
++ System devices
+  - ACPI Fixed Feature Button
+  - ACPI Module Device
+  - ACPI Module Device
+  - ACPI Module Device
+  - ACPI Module Device
+  - ACPI Power Button
+  - Advanced programmable interrupt controller
+  - AMDA00 Interface (driver 1.0.1.0)
+  - Composite Bus Enumerator
+  - Direct memory access controller
+  - File as Volume Driver
+  - High Definition Audio Controller
+  - High Definition Audio Controller
+  - High precision event timer
+  - Intel(R) C610 series/X99 chipset SMBus Controller - 8D22 (driver 9.4.2.1013)
+  - Intel(R) C610 series/X99 chipset SPSR - 8D7C (driver 9.4.2.1013)
+  - Intel(R) Management Engine Interface  (driver 11.0.0.1166)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Address Map VTd_Misc System Management - 2F28 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FF8 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FF9 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FFA (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FFB (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBE (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBF (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FB8 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FB9 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FBA (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FBB (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO Channel 0/1 Broadcast - 2FAE (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO Channel 2/3 Broadcast - 2F6E (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO Global Broadcast - 2F6F (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 DDRIO Global Broadcast - 2FAF (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Home Agent 0 - 2F30 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Home Agent 0 - 2FA0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Home Agent 1 - 2F38 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Home Agent 1 - 2F60 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Hot Plug - 2F29 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 I/O APIC - 2F2C (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 ERROR Registers - 2FB2 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 Thermal Control - 2FB0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 ERROR Registers - 2FB3 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 Thermal Control - 2FB1 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 2 ERROR Registers - 2FB6 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 2 Thermal Control - 2FB4 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 3 ERROR Registers - 2FB7 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 3 Thermal Control - 2FB5 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder - 2FAA (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder - 2FAB (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder - 2FAC (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder - 2FAD (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Target Address / Thermal / RAS Registers - 2F71 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Target Address / Thermal / RAS Registers - 2FA8 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 ERROR Registers - 2FD2 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 Thermal Control - 2FD0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 ERROR Registers - 2FD3 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 Thermal Control - 2FD1 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 2 ERROR Registers - 2FD6 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 2 Thermal Control - 2FD4 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 3 ERROR Registers - 2FD7 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 3 Thermal Control - 2FD5 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder - 2F6A (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder - 2F6B (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder - 2F6C (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder - 2F6D (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Target Address / Thermal / RAS Registers - 2F68 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Target Address / Thermal / RAS Registers - 2F79 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 PCIe Ring Interface - 2F1D (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 PCIe Ring Interface - 2F34 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2F98 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2F99 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2F9A (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2F9C (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Power Control Unit - 2FC0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F36 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F37 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F81 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 RAS Control Status and Global Errors - 2F2A (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F1E (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F1F (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F7D (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFC (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFD (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFE (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE0 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE1 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE2 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE3 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE4 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE5 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 VCU - 2F88 (driver 9.4.2.1018)
+  - Intel(R) Xeon(R) E5 v3/Core i7 VCU - 2F8A (driver 9.4.2.1018)
+  - IPBusEnum Root Enumerator
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft Virtual Drive Enumerator Driver
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Motherboard resources
+  - Motherboard resources
+  - Numeric data processor
+  - Pci Bus (driver 15.20.0.0)
+  - Pci Bus (driver 15.20.0.0)
+  - PCI standard host CPU bridge
+  - PCI standard ISA bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - PCI standard PCI-to-PCI bridge
+  - Plug and Play Software Device Enumerator
+  - Programmable interrupt controller
+  - Remote Desktop Device Redirector Bus
+  - System CMOS/real time clock
+  - System speaker
+  - System timer
+  - Terminal Server Keyboard Driver
+  - Terminal Server Mouse Driver
+  - UMBus Enumerator
+  - UMBus Enumerator
+  - UMBus Root Bus Enumerator
+  - VMware VMCI Host Device (driver 9.7.1.0)
+  - Volume Manager
++ Universal Serial Bus controllers
+  - ASMedia XHCI 1.0 Controller (driver 1.16.24.0)
+  - Generic USB Hub
+  - Generic USB Hub
+  - Generic USB Hub
+  - Generic USB Hub
+  - Generic USB Hub
+  - Intel(R) USB 3.0 eXtensible Host Controller (driver 4.0.0.36)
+  - Intel(R) USB 3.0 Root Hub (driver 4.0.0.36)
+  - Standard Enhanced PCI to USB Host Controller
+  - Standard Enhanced PCI to USB Host Controller
+  - USB Composite Device
+  - USB Root Hub (driver 1.16.24.0)
+  - USB Root Hub
+  - USB Root Hub
+
+cpu registers:
+eax = 00000000
+ebx = 024480dc
+ecx = 0018fdfb
+edx = 024480dc
+esi = 004db0c0
+edi = 00000000
+eip = 005357e0
+esp = 0018fdd8
+ebp = 0018fde0
+
+stack dump:
+0018fdd8  34 fe 18 00 00 00 00 00 - f0 fd 18 00 a6 c3 53 00  4.............S.
+0018fde8  dc 80 44 02 58 2e 40 02 - 04 fe 18 00 d0 3e 48 00  ..D.X.@......>H.
+0018fdf8  00 e0 fd 7e dc 80 44 02 - dc 80 44 02 18 fe 18 00  ...~..D...D.....
+0018fe08  00 ac 4d 00 00 00 00 00 - 18 d3 43 02 dc 80 44 02  ..M.......C...D.
+0018fe18  28 fe 18 00 28 3d 48 00 - 0c f6 4c 00 50 89 44 02  (...(=H...L.P.D.
+0018fe28  34 fe 18 00 f3 df 4c 00 - 18 d3 43 02 4c fe 18 00  4.....L...C.L...
+0018fe38  e1 ef 4e 00 03 00 00 00 - 18 d3 43 02 00 00 00 00  ..N.......C.....
+0018fe48  c8 ce 43 02 68 fe 18 00 - ff ef 4e 00 bc fe 18 00  ..C.h.....N.....
+0018fe58  02 00 00 00 c8 ce 43 02 - 00 00 00 00 68 cb 43 02  ......C.....h.C.
+0018fe68  84 fe 18 00 ff ef 4e 00 - bc fe 18 00 01 00 00 00  ......N.........
+0018fe78  68 cb 43 02 0a 00 00 00 - 0c 49 42 02 a0 fe 18 00  h.C......IB.....
+0018fe88  ff ef 4e 00 bc fe 18 00 - 03 00 00 00 0c 49 42 02  ..N..........IB.
+0018fe98  00 00 00 00 58 2e 40 02 - bc fe 18 00 98 f0 4e 00  ....X.@.......N.
+0018fea8  bc fe 18 00 1e a6 3b 77 - 48 05 90 c2 fe ff ff ff  ......;wH.......
+0018feb8  58 2e 40 02 d4 fe 18 00 - d2 35 4f 00 58 2e 40 02  X.@......5O.X.@.
+0018fec8  03 00 00 00 00 00 00 00 - d0 24 40 02 18 ff 18 00  .........$@.....
+0018fed8  3e 37 4f 00 e8 fe 18 00 - 18 3e 40 00 18 ff 18 00  >7O......>@.....
+0018fee8  48 ff 18 00 a1 37 4f 00 - 18 ff 18 00 00 00 00 00  H....7O.........
+0018fef8  00 00 00 00 00 e0 fd 7e - 00 00 00 00 00 00 00 00  .......~........
+0018ff08  20 ff 18 00 40 06 00 01 - 68 cb 43 02 d0 24 40 02   ...@...h.C..$@.
+
+disassembling:
+[...]
+005357d4 842   push    ebp
+005357d5       mov     ebp, esp
+005357d7       add     esp, -8
+005357da       mov     [ebp-4], eax
+005357dd 843   mov     eax, [ebp-4]
+005357e0     > cmp     dword ptr [eax+$40], 0
+005357e4       jz      loc_5357f0
+005357e6       mov     eax, [ebp-4]
+005357e9       cmp     word ptr [eax+$4c], 0
+005357ee       ja      loc_5357f4
+005357f0       xor     eax, eax
+[...]
+

@@ -1,0 +1,121 @@
+; 테스트 임무  필요 아이템 속성 그룹
+
+; (key x)    x : 그룹 인덱스
+; (script x) x : 해당 아이템의 기본 스크립트명
+; (item x y) x : 필요 아이템 인덱스 y : 필요 갯수
+
+;ex) (taskquest (key 2) (script s600002) (item 123 31) (item 1234 1))
+
+; 스크립트 제작시 반드시 아이템과 일치하여야 한다.
+; key 0번은 사용하지 않도록 한다. 0번은 테스크가 없을 때 값이다.
+
+(taskquest	(key 1)		(script s600000)	(item 171 25)	(monster 25 26) )
+(taskquest	(key 2)		(script s600000)	(item 173 15)	(monster 27 28) )
+(taskquest	(key 3)		(script s600000)	(item 174 10)	(monster 12) )
+(taskquest	(key 4)		(script s600000)	(item 175 10)	(monster 13) )
+(taskquest	(key 5)		(script s600000)	(item 176 10)	(monster 14) )
+(taskquest	(key 6)		(script s600000)	(item 177 10)	(monster 15) )
+(taskquest	(key 7)		(script s600000)	(item 178 10)	(monster 16) )
+(taskquest	(key 8)		(script s600000)	(item 179 10)	(monster 17) )
+(taskquest	(key 9)		(script s600000)	(item 162 10)	(monster 21 22 23) )
+(taskquest	(key 10)	(script s600000)	(item 180 10)	(monster 18) )
+(taskquest	(key 11)	(script s600000)	(item 163 10)	(monster 19) )
+(taskquest	(key 12)	(script s600000)	(item 181 5)	(monster 20) )
+(taskquest	(key 13)	(script s600000)	(item 227 20)	(monster 37) )
+(taskquest	(key 14)	(script s600000)	(item 228 10)	(monster 38) )
+(taskquest	(key 15)	(script s600000)	(item 229 10)	(monster 39) )
+(taskquest	(key 16)	(script s600000)	(item 230 5)	(monster 40) )
+(taskquest	(key 17)	(script s600000)	(item 231 5)	(monster 41) )
+(taskquest	(key 18)	(script s600000)	(item 232 10)	(monster 42) )
+(taskquest	(key 19)	(script s600000)	(item 233 5)	(monster 43) )
+
+;고레벨용 임무퀘스트 추가
+(taskquest	(key 20)	(script s600000)	(item 1366 50) 	(monster 55) )
+(taskquest	(key 21)	(script s600000)	(item 1367 40) 	(monster 56) )
+(taskquest	(key 22)	(script s600000)	(item 1368 40)	(monster 57) )
+(taskquest	(key 23)	(script s600000)	(item 1369 45)	(monster 58) )
+(taskquest	(key 24)	(script s600000)	(item 1370 15)	(monster 134) )
+
+(taskquest	(key 25)	(script s600025)	(item 1371 60)	)
+(taskquest	(key 26)	(script s600000)	(item 1372 30)	(monster 78) )
+(taskquest	(key 27)	(script s600000)	(item 1373 20)	(monster 44) )
+(taskquest	(key 28)	(script s600000)	(item 1374 10)	(monster 45) )
+(taskquest	(key 29)	(script s600000)	(item 1375 20)	(monster 46) )
+
+(taskquest	(key 30)	(script s600000)	(item 1376 20)	(monster 47) )
+(taskquest	(key 31)	(script s600000)	(item 1377 20)	(monster 48) )
+(taskquest	(key 32)	(script s600000)	(item 1378 40)	(monster 49) )
+(taskquest	(key 33)	(script s600000)	(item 1379 20)	(monster 236) )
+(taskquest	(key 34)	(script s600000)	(item 1380 10)	(monster 82) )
+
+(taskquest	(key 35)	(script s600000)	(item 1381 5)	(monster 239) )
+(taskquest	(key 36)	(script s600000)	(item 1382 10)	(monster 82) )
+(taskquest	(key 37)	(script s600000)	(item 1383 5)	(monster 242) )
+(taskquest	(key 38)	(script s600000)	(item 1384 20)	(monster 245) )
+(taskquest	(key 39)	(script s600000)	(item 1385 20)	(monster 120) )
+
+(taskquest	(key 40)	(script s600000)	(item 1386 40)	(monster 248) )
+(taskquest	(key 41)	(script s600000)	(item 1387 30)	(monster 390) )
+(taskquest	(key 42)	(script s600000)	(item 1388 10)	(monster 121) )
+(taskquest	(key 43)	(script s600000)	(item 1389 30)	(monster 394) )
+(taskquest	(key 44)	(script s600000)	(item 1390 10)	(monster 251) )
+
+(taskquest	(key 45)	(script s600000)	(item 1391 20)	(monster 392) )
+(taskquest	(key 46)	(script s600000)	(item 1392 5)	(monster 123) )
+(taskquest	(key 47)	(script s600000)	(item 1393 30)	(monster 398) )
+(taskquest	(key 48)	(script s600000)	(item 1394 20)	(monster 254) )
+(taskquest	(key 49)	(script s600000)	(item 1395 15)	(monster 381) )
+
+(taskquest	(key 50)	(script s600000)	(item 1396 5)	(monster 125) )
+(taskquest	(key 51)	(script s600000)	(item 1397 15)	(monster 380) )
+(taskquest	(key 52)	(script s600000)	(item 1398 5)	(monster 257) )
+(taskquest	(key 53)	(script s600000)	(item 1399 10)	(monster 375) )
+(taskquest	(key 54)	(script s600000)	(item 1400 15)	(monster 376) )
+
+(taskquest	(key 55)	(script s600000)	(item 1401 10)	(monster 377) )
+(taskquest	(key 56)	(script s600000)	(item 1402 20)	(monster 378) )
+(taskquest	(key 57)	(script s600000)	(item 1403 5)	(monster 379) )
+
+; 데바 임무
+(taskquest	(key 58)	(script s600000)	(item 1713 50)	(monster 585) ) ; 미친 마구니 노역부 수급 50개
+(taskquest	(key 59)	(script s600000)	(item 1718 30)	(monster 595) ) ; 멧돼지고기
+(taskquest	(key 60)	(script s600060)	(item 1719 1)(item 1720 1)(item 1721 1)(item 1722 1)(item 1723 1)(item 1724 1)(item 1725 1)(item 1726 1)(item 1727 1)(item 1728 1) )
+(taskquest	(key 61)	(script s600000)	(item 1731 80)	(monster 607) ) ; 놀의 징표
+(taskquest	(key 62)	(script s600000)	(item 1738 50)	(monster 613) ) ; 고블린 주술사 수급 
+
+; 데바 임무 2차
+
+(taskquest	(key 63)	(script s600000)	(item 1790 80)	(monster 595) )
+(taskquest	(key 64)	(script s600000)	(item 1791 100)	(monster 607) )
+(taskquest	(key 65)	(script s600000)	(item 1784 120)	(monster 590) )
+(taskquest	(key 66)	(script s600000)	(item 1792 150)	(monster 610) )
+(taskquest	(key 67)	(script s600000)	(item 1793 200)	(monster 622) )
+
+;혼델 임무
+(taskquest	(key 68)	(script s600000)	(item 2080 20)	(monster 947) )
+(taskquest	(key 69)	(script s600000)	(item 2081 20)	(monster 924 929) )
+(taskquest	(key 70)	(script s600000)	(item 2082 20)	(monster 707) )
+(taskquest	(key 71)	(script s600000)	(item 2083 20)	(monster 624 817 820 801) )
+(taskquest	(key 72)	(script s600000)	(item 2084 20)	(monster 680 686 613) )
+(taskquest	(key 73)	(script s600000)	(item 2085 20)	(monster 689 695 811) )
+(taskquest	(key 74)	(script s600000)	(item 2086 20)	(monster 674 677) )
+(taskquest	(key 75)	(script s600000)	(item 2087 10)	(monster 934 939) )
+(taskquest	(key 76)	(script s600000)	(item 2088 10)	(monster 582) )
+
+;천지연 임무문서
+(taskquest	(key 77)	(script s600000)	(item 2415 40)	(monster 595) ) ;멧돼지 / 어금니 40개
+(taskquest	(key 78)	(script s600000)	(item 2416 40)	(monster 598) ) ;늑대 / 피 40방울
+(taskquest	(key 79)	(script s600000)	(item 2420 40)	(monster 546) ) ;상급 해골 병사 / 해골 병사 방패 40개
+
+; 91 ~ 100 등급 임무 퀘스트 10종 추가
+
+(taskquest	(key 80)	(script s600000)	(item 3070 250)	(monster 133) )		;거마일족 우두머리 뿔 250개를 가지고 오시오.
+(taskquest	(key 81)	(script s600000)	(item 3071 100)	(monster 133) ) 	;거마일족 우두머리 꼬리 100개를 가지고 오시오.
+(taskquest	(key 82)	(script s600000)	(item 3072 200)	(monster 633) )		;자이언트의 피 200개 가지고 오시오.
+(taskquest	(key 83)	(script s600000)	(item 3073 200)	(monster 636) )	 	;에프리티의 이빨을 200개를 가지고 오시오.
+(taskquest	(key 84)	(script s600000)	(item 3074 200)	(monster 1035))		;지하병사의 오른손 200개를 가지고 오시오.
+(taskquest	(key 85)	(script s600000)	(item 3075 150)	(monster 1035))		;지하병사의 갑옷 150개를 가지고 오시오.
+(taskquest	(key 86)	(script s600000)	(item 3076 250)	(monster 1038))		;지하정찰병의 검 250개를 가지고 오시오.
+(taskquest	(key 87)	(script s600000)	(item 3077 200)	(monster 1038))		;지하정찰병의 순찰패 200개를 가지고 오시오
+(taskquest	(key 88)	(script s600000)	(item 3078 300)	(monster 1037))		;지하 방패병의 검 300개를 가지고 오시오.
+(taskquest	(key 89)	(script s600000)	(item 3079 250)	(monster 1037))		;지하 방패병의 방패 250개를 가지고 오시오.

@@ -1,0 +1,932 @@
+; 조합관련 스크립트입니다
+; type 재료와 합성물로 나누어집니다. compound 합성물입니다. 재료로 만들어진 아이템 입니다. materrial 재료 입니다 합성물을 만들기위해 필요한 재료에대한 목록을 출력하게 합니다.
+
+;2011 여름이벤트
+;(initswapevent 
+;(action 1)			 //제조 스크립트마다의 고유 할당번호입니다. 새로운 제조와 제조 엔피씨를 다르게 하실경우 이부분을 수정하셔야합니다.
+;(type compound) (type material) //제조 스크립트에서 제료와 완료 목록을 나타냅니다 compound는 완료목록 , material은 제조목록에서 나타납니다.
+;(index 0 2171)			 리스트의 0 을 나타냅니다 0번째리스트의 완료목록은 2171입니다.
+;(name 0)			 만약 완료목록을 기본아이템네임과 다른게 출력을 해야하할경우 name에 massege-x의 sys번호를 입력 시킬경우 완료목록에 sys번호의 내용이 출력됩니다. 
+;                                필요없을경우 꼭 0으로 놓아주셔야 itemname의 값이 출력됩니다
+;(material 1 2177 35 )		 완료목록에서 필요한 재료목록 리스트입니다. 첫번째 1은 총 이아이템을 만들기위한 종류의 갯수입니다 1이니 1종류의 아이템으로 완료목록을 만들갯다는것입니다.
+;				 뒤 2177은 필요 재료의 itemindex이며 35은 2177의 필요 갯수입니다.
+;(money 0))		         money는 해당 완료 아이템을 만들경우 한개당의 필요 자모전 입니다
+
+
+;등갈비
+(initswapevent (action 1) (type compound) (index 0 2171) (name 0) (material 1 2177 35 ) (money 0))
+;청정수
+(initswapevent (action 1) (type compound) (index 1 2172) (name 0) (material 1 2177 45 ) (money 0))
+;삼색음료
+(initswapevent (action 1) (type compound) (index 2 2173) (name 0) (material 1 2177 25 ) (money 0))
+;노가리
+(initswapevent (action 1) (type compound) (index 3 2174) (name 0) (material 1 2177 25 ) (money 0))
+;닭꼬치
+(initswapevent (action 1) (type compound) (index 4 2175) (name 0) (material 1 2177 30 ) (money 0))
+;야채꼬치
+(initswapevent (action 1) (type compound) (index 5 2176) (name 0) (material 1 2177 30 ) (money 0))
+;은구슬
+(initswapevent (action 1) (type compound) (index 6 2178) (name 0) (material 1 2177 100) (money 0))
+;금구슬
+(initswapevent (action 1) (type compound) (index 7 2179) (name 0) (material 1 2178 35) (money 0))
+
+;참도1일
+(initswapevent (action 1) (type compound) (index 8 2163) (name 0) (material 2 2177 25 2178 8) (money 0))
+;대도1일
+(initswapevent (action 1) (type compound) (index 9 2164) (name 0) (material 2 2177 50 2178 10) (money 0))
+;맥궁1일
+(initswapevent (action 1) (type compound) (index 10 2165) (name 0) (material 2 2177 50 2178 10 ) (money 0))
+;선인지팡이1일
+(initswapevent (action 1) (type compound) (index 11 2166) (name 0) (material 2 2177 50 2178 10 ) (money 0))
+;군사지팡이1일
+(initswapevent (action 1) (type compound) (index 12 2167) (name 0) (material 2 2177 50 2178 10 ) (money 0))
+;일반지팡이1일
+(initswapevent (action 1) (type compound) (index 13 2168) (name 0) (material 2 2177 50 2178 10) (money 0))
+;단검1일
+(initswapevent (action 1) (type compound) (index 14 2169) (name 0) (material 2 2177 50 2178 10) (money 0))
+;방패1일
+(initswapevent (action 1) (type compound) (index 15 2170) (name 0) (material 2 2177 25 2178 2) (money 0))
+
+;참도7일
+(initswapevent (action 1) (type compound) (index 16 2190) (name 0) (material 2 2177 10 2178 28) (money 0))
+;대도7일
+(initswapevent (action 1) (type compound) (index 17 2191) (name 0) (material 2 2177 20 2179 1 ) (money 0))
+;맥궁7일
+(initswapevent (action 1) (type compound) (index 18 2192) (name 0) (material 2 2177 20 2179 1 ) (money 0))
+;선인지팡이7일
+(initswapevent (action 1) (type compound) (index 19 2193) (name 0) (material 2 2177 20 2179 1) (money 0))
+;군사지팡이7일
+(initswapevent (action 1) (type compound) (index 20 2194) (name 0) (material 2 2177 20 2179 1) (money 0))
+;일반지팡이7일
+(initswapevent (action 1) (type compound) (index 21 2195) (name 0) (material 2 2177 20 2179 1) (money 0))
+;단검7일
+(initswapevent (action 1) (type compound) (index 22 2196) (name 0) (material 2 2177 20 2179 1) (money 0))
+;방패7일
+(initswapevent (action 1) (type compound) (index 23 2197) (name 0) (material 2 2177 10 2178 7) (money 0))
+
+;보호부적(폭군)
+(initswapevent (action 1) (type compound) (index 24 322) (name 3673) (material 2 2177 10 2178 72) (money 0))
+;보호부적(복수)
+(initswapevent (action 1) (type compound) (index 25 323) (name 3674) (material 2 2177 10 2178 45) (money 0))
+;보호부적(긍지)
+(initswapevent (action 1) (type compound) (index 26 324) (name 3675) (material 2 2177 10 2178 72) (money 0))
+;보호부적(파멸)
+(initswapevent (action 1) (type compound) (index 27 325) (name 3676)  (material 2 2177 10 2178 45) (money 0))
+;보호부적(영광)
+(initswapevent (action 1) (type compound) (index 28 326) (name 3677) (material 2 2177 10 2178 72) (money 0))
+;암흑석
+(initswapevent (action 1) (type compound) (index 29 895) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;신성석
+(initswapevent (action 1) (type compound) (index 30 896) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;화염석
+(initswapevent (action 1) (type compound) (index 31 897) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;빙염석
+(initswapevent (action 1) (type compound) (index 32 898) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;낙뢰석
+(initswapevent (action 1) (type compound) (index 33 899) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;독운석
+(initswapevent (action 1) (type compound) (index 34 900) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;마비석
+(initswapevent (action 1) (type compound) (index 35 901) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;기운석
+(initswapevent (action 1) (type compound) (index 36 902) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;기술석
+(initswapevent (action 1) (type compound) (index 37 903) (name 0) (material 2 2177 150 2179 12 ) (money 0))
+;화주
+;(initswapevent (action 1) (type compound) (index 38 942) (name 0) (material 2 2177 10 2179 35) (money 0))
+;언데드의정수
+(initswapevent (action 1) (type compound) (index 38 1617) (name 0) (material 2 2177 20 2179 3) (money 0))
+;용신두루마리
+(initswapevent (action 1) (type compound) (index 39 2102) (name 0) (material 2 2177 300 2179 1) (money 0))
+
+
+
+;액세서리
+;타락한 정령의 반지
+(initswapevent (action 3) (type compound) (index 0 2246)  (name 0) (material 2 2312 3 2333 18 ) (money 0))
+;타락한 정령의 호부
+(initswapevent (action 3) (type compound) (index 1 2247)  (name 0) (material 2 2312 3 2333 18 ) (money 0))
+;타락한 정령의 노리개
+(initswapevent (action 3) (type compound) (index 2 2250)  (name 0) (material 2 2312 3 2333 18 ) (money 0))
+;정화된 정령의 반지
+(initswapevent (action 4) (type compound) (index 0 2248)  (name 0) (material 4 2246 1 2312 3 2333 7 2311 1) (money 0))
+;정화된 정령의 호부
+(initswapevent (action 4) (type compound) (index 1 2249)  (name 0) (material 4 2247 1 2312 3 2333 7 2311 1) (money 0))
+;정화된 정령의 노리개 
+(initswapevent (action 4) (type compound) (index 2 2251)  (name 0) (material 4 2250 1 2312 3 2333 7 2311 1) (money 0))
+
+
+
+
+;재료 출력
+(initswapevent (action 1) (type material) (index 0 2177) )
+(initswapevent (action 1) (type material) (index 1 2178) )
+(initswapevent (action 1) (type material) (index 2 2179) )
+
+;샌드맨 악세서리 재료 출력 
+(initswapevent (action 3) (type material) (index 0 2312) )
+(initswapevent (action 3) (type material) (index 1 2333) )
+
+(initswapevent (action 4) (type material) (index 0 2312) )
+(initswapevent (action 4) (type material) (index 1 2333) )
+(initswapevent (action 4) (type material) (index 2 2311) )
+(initswapevent (action 4) (type material) (index 3 2246) )
+(initswapevent (action 4) (type material) (index 4 2247) )
+(initswapevent (action 4) (type material) (index 5 2250) )
+
+
+
+
+;///////////////////////////////////////////////////////////////
+;펫 교배 시스템 - 편의상 서버 스크립트 InitPetSwap.txt 와 형식을 통일
+; index - 펫 조합 인덱스, 조합 요청시 전송되는 패킷 정보에 포함.
+; item - 조합 결과로 생성되는 아이템 인덱스
+; Material1 - 조합에 필요한 펫1 인덱스, 필요 개수
+; Material2 - 조합에 필요한 펫2 인덱스, 필요 개수
+;///////////////////////////////////////////////////////////////
+
+;자모전 필드
+;청룡 + 백호 = [혼]백룡
+(InitPetSwap	(index 1)	(Material1 1747 1 ) (Material2 1749 1 ) (item 2550 100000))
+;청룡 + 현무 = [혼]흑룡                                                   
+(InitPetSwap	(index 2)	(Material1 1747 1 ) (Material2 1751 1 ) (item 2551 100000))
+;청룡 + 주작 = [혼]적룡                                                   
+(InitPetSwap	(index 3)	(Material1 1747 1 ) (Material2 1753 1 ) (item 2552 100000))
+;백호 + 청룡 = [혼]청호                                                   
+(InitPetSwap	(index 4)	(Material1 1749 1 ) (Material2 1747 1 ) (item 2553 100000))
+;백호 + 현무 = [혼]흑호                                                   
+(InitPetSwap	(index 5)	(Material1 1749 1 ) (Material2 1751 1 ) (item 2554 100000))
+;백호 + 주작 = [혼]적호                                                   
+(InitPetSwap	(index 6)	(Material1 1749 1 ) (Material2 1753 1 ) (item 2555 100000))
+;현무 + 청룡 = [혼]청귀                                                   
+(InitPetSwap	(index 7)	(Material1 1751 1 ) (Material2 1747 1 ) (item 2556 100000))
+;현무 + 백호 = [혼]백귀                                                   
+(InitPetSwap	(index 8)	(Material1 1751 1 ) (Material2 1749 1 ) (item 2557 100000))
+;현무 + 주작 = [혼]적귀                                                   
+(InitPetSwap	(index 9)	(Material1 1751 1 ) (Material2 1753 1 ) (item 2558 100000))
+;주작 + 청룡 = [혼]청작                                                   
+(InitPetSwap	(index 10)	(Material1 1753 1 ) (Material2 1747 1 ) (item 2559 100000))
+;주작 + 백호 = [혼]백작                                                   
+(InitPetSwap	(index 11)	(Material1 1753 1 ) (Material2 1749 1 ) (item 2560 100000))
+;주작 + 현무 = [혼]흑작                                                   
+(InitPetSwap	(index 12)	(Material1 1753 1 ) (Material2 1751 1 ) (item 2561 100000))
+
+;자모전 PvP
+;청룡 + 백호 = [혼]백룡
+(InitPetSwap	(index 13)	(Material1 1748 1 ) (Material2 1750 1 ) (item 2562 100000))
+;청룡 + 현무 = [혼]흑룡                                                   
+(InitPetSwap	(index 14)	(Material1 1748 1 ) (Material2 1752 1 ) (item 2563 100000))
+;청룡 + 주작 = [혼]적룡                                                   
+(InitPetSwap	(index 15)	(Material1 1748 1 ) (Material2 1754 1 ) (item 2564 100000))
+;백호 + 청룡 = [혼]청호                                                   
+(InitPetSwap	(index 16)	(Material1 1750 1 ) (Material2 1748 1 ) (item 2565 100000))
+;백호 + 현무 = [혼]흑호                                                   
+(InitPetSwap	(index 17)	(Material1 1750 1 ) (Material2 1752 1 ) (item 2566 100000))
+;백호 + 주작 = [혼]적호                                                   
+(InitPetSwap	(index 18)	(Material1 1750 1 ) (Material2 1754 1 ) (item 2567 100000))
+;현무 + 청룡 = [혼]청귀                                                   
+(InitPetSwap	(index 19)	(Material1 1752 1 ) (Material2 1748 1 ) (item 2568 100000))
+;현무 + 백호 = [혼]백귀                                                   
+(InitPetSwap	(index 20)	(Material1 1752 1 ) (Material2 1750 1 ) (item 2569 100000))
+;현무 + 주작 = [혼]적귀                                                   
+(InitPetSwap	(index 21)	(Material1 1752 1 ) (Material2 1754 1 ) (item 2570 100000))
+;주작 + 청룡 = [혼]청작                                                   
+(InitPetSwap	(index 22)	(Material1 1754 1 ) (Material2 1748 1 ) (item 2571 100000))
+;주작 + 백호 = [혼]백작                                                   
+(InitPetSwap	(index 23)	(Material1 1754 1 ) (Material2 1750 1 ) (item 2572 100000))
+;주작 + 현무 = [혼]흑작                                                   
+(InitPetSwap	(index 24)	(Material1 1754 1 ) (Material2 1752 1 ) (item 2573 100000))
+
+;캐시 필드
+;청룡 + 백호 = [혼]백룡
+(InitPetSwap	(index 25)	(Material1 1755 1 )(Material1 1870 1 ) (Material2 1757 1 )(Material2 1872 1 ) (item 2574 50000)	(item 2598 25000)	(item 2622 24000)	(item 2646 1000))
+;청룡 + 현무 = [혼]흑룡                                                                                	        	 	                      	  
+(InitPetSwap	(index 26)	(Material1 1755 1 )(Material1 1870 1 ) (Material2 1759 1 )(Material2 1874 1 ) (item 2575 50000)	(item 2599 25000)	(item 2623 24000)	(item 2646 1000))
+;청룡 + 주작 = [혼]적룡                                                                                	        	 	                      	  
+(InitPetSwap	(index 27)	(Material1 1755 1 )(Material1 1870 1 ) (Material2 1761 1 )(Material2 1876 1 ) (item 2576 50000)	(item 2600 25000)	(item 2624 24000)	(item 2646 1000))
+;백호 + 청룡 = [혼]청호                                                                                	        	 	                      	  
+(InitPetSwap	(index 28)	(Material1 1757 1 )(Material1 1872 1 ) (Material2 1755 1 )(Material2 1870 1 ) (item 2577 50000)	(item 2601 25000)	(item 2625 24000)	(item 2647 1000))
+;백호 + 현무 = [혼]흑호                                                                                	        	 	                      	  
+(InitPetSwap	(index 29)	(Material1 1757 1 )(Material1 1872 1 ) (Material2 1759 1 )(Material2 1874 1 ) (item 2578 50000)	(item 2602 25000)	(item 2626 24000)	(item 2647 1000))
+;백호 + 주작 = [혼]적호                                                                                	        	 	                      	  
+(InitPetSwap	(index 30)	(Material1 1757 1 )(Material1 1872 1 ) (Material2 1761 1 )(Material2 1876 1 ) (item 2579 50000)	(item 2603 25000)	(item 2627 24000)	(item 2647 1000))
+;현무 + 청룡 = [혼]청귀                                                                                	        	 	                      	  
+(InitPetSwap	(index 31)	(Material1 1759 1 )(Material1 1874 1 ) (Material2 1755 1 )(Material2 1870 1 ) (item 2580 50000)	(item 2604 25000)	(item 2628 24000)	(item 2648 1000))
+;현무 + 백호 = [혼]백귀                                                                                	        	 	                      	  
+(InitPetSwap	(index 32)	(Material1 1759 1 )(Material1 1874 1 ) (Material2 1757 1 )(Material2 1872 1 ) (item 2581 50000)	(item 2605 25000)	(item 2629 24000)	(item 2648 1000))
+;현무 + 주작 = [혼]적귀                                                                                	        	 	                      	  
+(InitPetSwap	(index 33)	(Material1 1759 1 )(Material1 1874 1 ) (Material2 1761 1 )(Material2 1876 1 ) (item 2582 50000)	(item 2606 25000)	(item 2630 24000)	(item 2648 1000))
+;주작 + 청룡 = [혼]청작                                                                                	        	 	                      	  
+(InitPetSwap	(index 34)	(Material1 1761 1 )(Material1 1876 1 ) (Material2 1755 1 )(Material2 1870 1 ) (item 2583 50000)	(item 2607 25000)	(item 2631 24000)	(item 2649 1000))
+;주작 + 백호 = [혼]백작                                                                                	        	 	                      	  
+(InitPetSwap	(index 35)	(Material1 1761 1 )(Material1 1876 1 ) (Material2 1757 1 )(Material2 1872 1 ) (item 2584 50000)	(item 2608 25000)	(item 2632 24000)	(item 2649 1000))
+;주작 + 현무 = [혼]흑작                                                                                	        	 	                      	  
+(InitPetSwap	(index 36)	(Material1 1761 1 )(Material1 1876 1 ) (Material2 1759 1 )(Material2 1874 1 ) (item 2585 50000)	(item 2609 25000)	(item 2633 24000)	(item 2649 1000))
+																							
+;캐시 pvp                                                                            		
+;청룡 + 백호 = [혼]백룡                                                              		
+(InitPetSwap	(index 37)	(Material1 1756 1 )(Material1 1871 1 ) (Material2 1758 1 )(Material2 1873 1 ) (item 2586 50000)	(item 2610 25000)	(item 2634 24000)	(item 2650 1000))
+;청룡 + 현무 = [혼]흑룡                                                                                                 	                      	   	
+(InitPetSwap	(index 38)	(Material1 1756 1 )(Material1 1871 1 ) (Material2 1760 1 )(Material2 1875 1 ) (item 2587 50000)	(item 2611 25000)	(item 2635 24000)	(item 2650 1000))
+;청룡 + 주작 = [혼]적룡                                                                                                 	                      	   	
+(InitPetSwap	(index 39)	(Material1 1756 1 )(Material1 1871 1 ) (Material2 1762 1 )(Material2 1877 1 ) (item 2588 50000)	(item 2612 25000)	(item 2636 24000)	(item 2650 1000))
+;백호 + 청룡 = [혼]청호                                                                                                 	                      	   	
+(InitPetSwap	(index 40)	(Material1 1758 1 )(Material1 1873 1 ) (Material2 1756 1 )(Material2 1871 1 ) (item 2589 50000)	(item 2613 25000)	(item 2637 24000)	(item 2651 1000))
+;백호 + 현무 = [혼]흑호                                                                                                 	                      	   	
+(InitPetSwap	(index 41)	(Material1 1758 1 )(Material1 1873 1 ) (Material2 1760 1 )(Material2 1875 1 ) (item 2590 50000)	(item 2614 25000)	(item 2638 24000)	(item 2651 1000))
+;백호 + 주작 = [혼]적호                                                                                                 	                      	   	
+(InitPetSwap	(index 42)	(Material1 1758 1 )(Material1 1873 1 ) (Material2 1762 1 )(Material2 1877 1 ) (item 2591 50000)	(item 2615 25000)	(item 2639 24000)	(item 2651 1000))
+;현무 + 청룡 = [혼]청귀                                                                                                 	                      	   	
+(InitPetSwap	(index 43)	(Material1 1760 1 )(Material1 1875 1 ) (Material2 1756 1 )(Material2 1871 1 ) (item 2592 50000)	(item 2616 25000)	(item 2640 24000)	(item 2652 1000))
+;현무 + 백호 = [혼]백귀                                                                                                 	                      	   	
+(InitPetSwap	(index 44)	(Material1 1760 1 )(Material1 1875 1 ) (Material2 1758 1 )(Material2 1873 1 ) (item 2593 50000)	(item 2617 25000)	(item 2641 24000)	(item 2652 1000))
+;현무 + 주작 = [혼]적귀                                                                                                 	                      	   	
+(InitPetSwap	(index 45)	(Material1 1760 1 )(Material1 1875 1 ) (Material2 1762 1 )(Material2 1877 1 ) (item 2594 50000)	(item 2618 25000)	(item 2642 24000)	(item 2652 1000))
+;주작 + 청룡 = [혼]청작                                                                                                 	                      	   	
+(InitPetSwap	(index 46)	(Material1 1762 1 )(Material1 1877 1 ) (Material2 1756 1 )(Material2 1871 1 ) (item 2595 50000)	(item 2619 25000)	(item 2643 24000)	(item 2653 1000))
+;주작 + 백호 = [혼]백작                                                                                                 	                      	   	
+(InitPetSwap	(index 47)	(Material1 1762 1 )(Material1 1877 1 ) (Material2 1758 1 )(Material2 1873 1 ) (item 2596 50000)	(item 2620 25000)	(item 2644 24000)	(item 2653 1000))
+;주작 + 현무 = [혼]흑작                                                                                                 	                      	   	
+(InitPetSwap	(index 48)	(Material1 1762 1 )(Material1 1877 1 ) (Material2 1760 1 )(Material2 1875 1 ) (item 2597 50000)	(item 2621 25000)	(item 2645 24000)	(item 2653 1000))
+
+;///////////////////////////////////////////////////////////////
+;곡괭이 아이템 리스트
+; (type a b) :	a - UI에 보여질 곡괭이 분류 번호(OnSetType 호출시 전달 인자 값) (0 자모 / 1 캐쉬)
+;		b - 같은 a 분류내에서 곡괭이 구분 번호 & 시작 패킷 전송시 구분 번호
+;		    인덱스가 다른 곡괭이라도 기능이 같다면 이 번호를 동일하게 사용
+;		ex) (initPickax (type 0 0) (item 2524) )
+;		    (initPickax (type 0 0) (item 2600) )
+;		    - 2524와 2600곡괭이는 같은 슬롯을 사용하고 소지 합계를 출력.
+; (item a) : a -곡괭이 아이템 인덱스
+;///////////////////////////////////////////////////////////////
+(initPickax (type 0 0) (item 2524) )	;곡괭이
+(initPickax (type 1 0) (item 2525) )	;청룡 곡괭이
+(initPickax (type 1 1) (item 2526) )	;백호 곡괭이
+(initPickax (type 1 2) (item 2527) )	;주작 곡괭이
+(initPickax (type 1 3) (item 2528) )	;현무 곡괭이
+;(initPickax (type 1 4) (item 3055) )	;2014 월드컵 이벤트 - 현무 곡괭이
+
+;///////////////////////////////////////////////////////////////
+;광물 조합
+; index	: 주 제료가 되는 광물 아이템 인덱스
+; grae	: 1회 조합시 소모되는 주 제료 개수(조합 등급으로 분류 / UI에서는 개수 출력으로 구분
+; material : 조합에 필요한 재료
+; item	: 서버 스크립트 키값, 조합으로 얻어지는 아이템 인덱스, 획득 확률
+; specialty : 서버 스크립트 키값, 용해제 사용시 얻을 수 있는 아이템 인덱스, 확률
+;///////////////////////////////////////////////////////////////
+(initmineralmix (index 2530)	;구리광석
+	(grade 50	(material (2530 50))
+		(item		1	(2655 2656 2657 2537))
+		(specialty	2	(2655 2656)) )
+	(grade 100	(material (2530 100))
+		(item		3	(2655 2656 2657 2537))
+		(specialty	4	(2655 2656 2657)) )
+	(grade 150	(material (2530 150))
+		(item		5	(2655 2656 2657 2658 2537))
+		(specialty	6	(2655 2656 2657 2658)) )
+	(grade 200	(material (2530 200))
+		(item		7	(2655 2656 2657 2658)) )
+)
+
+(initmineralmix (index 2531)	;석영광석
+	(grade 50	(material (2531 50))
+		(item		101	(2659 2660 2661 2662 2537))
+		(specialty 	102	(2659 2660)) )
+	(grade 100	(material (2531 100))
+		(item		103	(2659 2660 2661 2537))
+		(specialty 	104	(2659 2660 2661)) )
+	(grade 150	(material (2531 150))
+		(item		105	(2659 2660 2661 2662 2537))
+		(specialty 	106	(2659 2660 2661 2662)) )
+	(grade 200	(material (2531 200))
+		(item		107	(2659 2660 2661 2662)) )
+)
+
+(initmineralmix (index 2532)	;철광석
+	(grade 75	(material (2532 75))
+		(item		201	(2663 2664 2537))
+		(specialty	202	(2663 2664)) )
+	(grade 150	(material (2532 150))
+		(item		203	(2663 2664 2665 2537)) 
+		(specialty	204	(2663 2664 2665)) ) 
+	(grade 225	(material (2532 225))
+		(item 		205	(2663 2664 2665 2666 2537))
+		(specialty	206	(2663 2664 2665 2666)) ) 
+	(grade 300	(material (2532 300))
+		(item		207	(2663 2664 2665 2666)) )
+)
+
+(initmineralmix (index 2533)	;강옥강석
+	(grade 75	(material (2533 75))
+		(item		301	(2667 2668 2537))
+		(specialty 	302	(2667 2668)) )
+	(grade 150	(material (2533 150))
+		(item		303	(2667 2668 2669 2537))
+		(specialty 	304	(2667 2668 2669)) ) 
+	(grade 225	(material (2533 225))
+		(item		305	(2667 2668 2669 2670 2537))
+		(specialty	306	(2667 2668 2669 2670)) )
+	(grade 300	(material (2533 300))
+		(item		307	(2667 2668 2669 2670)) )
+)
+
+(initmineralmix (index 2534)	;금은광석
+	(grade 100	(material (2534 100))
+		(item		401	(2671 2672 2537))
+		(specialty 	402	(2671 2672)) )
+	(grade 225	(material (2534 225))
+		(item		403	(2671 2672 2673 2537))
+		(specialty 	404	(2671 2672 2673)) ) 
+	(grade 300	(material (2534 300))
+		(item		405	(2671 2672 2673 2537))
+		(specialty 	406	(2671 2672 2673)) )
+)
+
+(initmineralmix (index 2535)	;혈광석
+	(grade 350	(material (2535 350))
+		(item		501	(2674 2537))
+		(specialty	502	(2674)) )
+)
+
+(initmineralmix (index 2536)	;금강광석
+	(grade 400	(material (2536 400))
+		(item		601	(2675 2537))
+		(specialty 	602	(2675)) )
+)
+
+(initmineralmix (index 2539)	;금오광석
+	(grade 400	(material (2539 400))
+		(item		701	(2538 2537))
+		(specialty 	702	(2538)) )
+)
+
+
+;///////////////////////////////////////////////////////////////
+;아이템 제작
+; index	: 고유번호(서버 스크립트의 값과 일치)
+; type : UI 체크박스 필터 구분 번호, 장비 종류별 개별 사용(type 0 = 첫번째 체크박스)
+; item	: 완성물 아이템 인덱스
+; material : Materialinfo 키값
+;///////////////////////////////////////////////////////////////
+;황금 무기
+(initmakeitem (index 1000) (type 0) (item 2676) (material 100) )	;참도
+(initmakeitem (index 1001) (type 0) (item 2677) (material 101) )	;대도
+(initmakeitem (index 1002) (type 0) (item 2678) (material 102) )	;맥궁
+(initmakeitem (index 1003) (type 0) (item 2679) (material 103) )	;지능지팡이(번뇌의)
+(initmakeitem (index 1004) (type 0) (item 2680) (material 104) )	;지혜지팡이(안식의)
+(initmakeitem (index 1005) (type 0) (item 2681) (material 105) )	;단검
+(initmakeitem (index 1006) (type 0) (item 2682) (material 106) )	;지팡이
+;혈룡 무기
+(initmakeitem (index 1100) (type 1) (item 2688) (material 200) )	;참도
+(initmakeitem (index 1101) (type 1) (item 2689) (material 201) )	;대도
+(initmakeitem (index 1102) (type 1) (item 2690) (material 202) )	;맥궁
+(initmakeitem (index 1103) (type 1) (item 2691) (material 203) )	;지능지팡이(파멸의)
+(initmakeitem (index 1104) (type 1) (item 2692) (material 204) )	;지혜지팡이(지옥의)
+(initmakeitem (index 1105) (type 1) (item 2693) (material 205) )	;단검
+;비천 무기
+(initmakeitem (index 1200) (type 2) (item 2700) (material 300) )	;참도
+(initmakeitem (index 1201) (type 2) (item 2701) (material 301) )	;대도
+(initmakeitem (index 1202) (type 2) (item 2702) (material 302) )	;맥궁
+(initmakeitem (index 1203) (type 2) (item 2703) (material 303) )	;지능지팡이(파멸의)
+(initmakeitem (index 1204) (type 2) (item 2704) (material 304) )	;지혜지팡이(지옥의)
+(initmakeitem (index 1205) (type 2) (item 2705) (material 305) )	;단검
+
+;황금 방어구 - 무사
+(initmakeitem (index 2000) (type 0) (item 2712) (material 1000) )	;상의
+(initmakeitem (index 2001) (type 0) (item 2713) (material 1001) )	;투구
+(initmakeitem (index 2002) (type 0) (item 2714) (material 1002) )	;장갑
+(initmakeitem (index 2003) (type 0) (item 2715) (material 1003) )	;신발
+(initmakeitem (index 2004) (type 0) (item 2716) (material 1004) )	;하의
+;황금 방어구 - 궁수
+(initmakeitem (index 2005) (type 0) (item 2717) (material 1000) )	;상의
+(initmakeitem (index 2006) (type 0) (item 2718) (material 1001) )	;투구
+(initmakeitem (index 2007) (type 0) (item 2719) (material 1002) )	;장갑
+(initmakeitem (index 2008) (type 0) (item 2720) (material 1003) )	;신발
+(initmakeitem (index 2009) (type 0) (item 2721) (material 1004) )	;하의
+;황금 방어구 - 주술사
+(initmakeitem (index 2010) (type 0) (item 2722) (material 1000) )	;상의
+(initmakeitem (index 2011) (type 0) (item 2723) (material 1001) )	;투구
+(initmakeitem (index 2012) (type 0) (item 2724) (material 1002) )	;장갑
+(initmakeitem (index 2013) (type 0) (item 2725) (material 1003) )	;신발
+(initmakeitem (index 2014) (type 0) (item 2726) (material 1004) )	;하의
+;황금 방어구 - 도적
+(initmakeitem (index 2015) (type 0) (item 2727) (material 1000) )	;상의
+(initmakeitem (index 2016) (type 0) (item 2728) (material 1001) )	;투구
+(initmakeitem (index 2017) (type 0) (item 2729) (material 1002) )	;장갑
+(initmakeitem (index 2018) (type 0) (item 2730) (material 1003) )	;신발
+(initmakeitem (index 2019) (type 0) (item 2731) (material 1004) )	;하의
+
+;혈룡 방어구 - 무사
+(initmakeitem (index 2100) (type 1) (item 2732) (material 1100) )	;상의
+(initmakeitem (index 2101) (type 1) (item 2733) (material 1100) )	;상의
+(initmakeitem (index 2102) (type 1) (item 2734) (material 1101) )	;투구
+(initmakeitem (index 2103) (type 1) (item 2735) (material 1102) )	;장갑
+(initmakeitem (index 2104) (type 1) (item 2736) (material 1103) )	;신발
+(initmakeitem (index 2105) (type 1) (item 2737) (material 1104) )	;하의
+(initmakeitem (index 2106) (type 1) (item 2738) (material 1104) )	;하의
+;혈룡 방어구 - 궁수
+(initmakeitem (index 2107) (type 1) (item 2739) (material 1100) )	;상의
+(initmakeitem (index 2108) (type 1) (item 2740) (material 1100) )	;상의
+(initmakeitem (index 2109) (type 1) (item 2741) (material 1101) )	;투구
+(initmakeitem (index 2110) (type 1) (item 2742) (material 1102) )	;장갑
+(initmakeitem (index 2111) (type 1) (item 2743) (material 1103) )	;신발
+(initmakeitem (index 2112) (type 1) (item 2744) (material 1104) )	;하의
+(initmakeitem (index 2113) (type 1) (item 2745) (material 1104) )	;하의
+;혈룡 방어구 - 주술사
+(initmakeitem (index 2114) (type 1) (item 2746) (material 1100) )	;상의
+(initmakeitem (index 2115) (type 1) (item 2747) (material 1100) )	;상의
+(initmakeitem (index 2116) (type 1) (item 2748) (material 1101) )	;투구
+(initmakeitem (index 2117) (type 1) (item 2749) (material 1102) )	;장갑
+(initmakeitem (index 2118) (type 1) (item 2750) (material 1103) )	;신발
+(initmakeitem (index 2119) (type 1) (item 2751) (material 1104) )	;하의
+(initmakeitem (index 2120) (type 1) (item 2752) (material 1104) )	;하의
+;혈룡 방어구 - 도적
+(initmakeitem (index 2121) (type 1) (item 2753) (material 1100) )	;상의
+(initmakeitem (index 2122) (type 1) (item 2754) (material 1100) )	;상의
+(initmakeitem (index 2123) (type 1) (item 2755) (material 1101) )	;투구
+(initmakeitem (index 2124) (type 1) (item 2756) (material 1102) )	;장갑
+(initmakeitem (index 2125) (type 1) (item 2757) (material 1103) )	;신발
+(initmakeitem (index 2126) (type 1) (item 2758) (material 1104) )	;하의
+(initmakeitem (index 2127) (type 1) (item 2759) (material 1104) )	;하의
+
+;비천 방어구 - 무사
+(initmakeitem (index 2200) (type 2) (item 2760) (material 1200) )
+(initmakeitem (index 2201) (type 2) (item 2761) (material 1200) )
+(initmakeitem (index 2202) (type 2) (item 2762) (material 1201) )
+(initmakeitem (index 2203) (type 2) (item 2763) (material 1202) )
+(initmakeitem (index 2204) (type 2) (item 2764) (material 1203) )
+(initmakeitem (index 2205) (type 2) (item 2765) (material 1204) )
+(initmakeitem (index 2206) (type 2) (item 2766) (material 1204) )
+;비천 방어구 - 궁수
+(initmakeitem (index 2207) (type 2) (item 2767) (material 1200) )
+(initmakeitem (index 2208) (type 2) (item 2768) (material 1200) )
+(initmakeitem (index 2209) (type 2) (item 2769) (material 1201) )
+(initmakeitem (index 2210) (type 2) (item 2770) (material 1202) )
+(initmakeitem (index 2211) (type 2) (item 2771) (material 1203) )
+(initmakeitem (index 2212) (type 2) (item 2772) (material 1204) )
+(initmakeitem (index 2213) (type 2) (item 2773) (material 1204) )
+;비천 방어구 - 주술사
+(initmakeitem (index 2214) (type 2) (item 2774) (material 1200) )
+(initmakeitem (index 2215) (type 2) (item 2775) (material 1200) )
+(initmakeitem (index 2216) (type 2) (item 2776) (material 1201) )
+(initmakeitem (index 2217) (type 2) (item 2777) (material 1202) )
+(initmakeitem (index 2218) (type 2) (item 2778) (material 1203) )
+(initmakeitem (index 2219) (type 2) (item 2779) (material 1204) )
+(initmakeitem (index 2220) (type 2) (item 2780) (material 1204) )
+;비천 방어구 - 도적
+(initmakeitem (index 2221) (type 2) (item 2781) (material 1200) )
+(initmakeitem (index 2222) (type 2) (item 2782) (material 1200) )
+(initmakeitem (index 2223) (type 2) (item 2783) (material 1201) )
+(initmakeitem (index 2224) (type 2) (item 2784) (material 1202) )
+(initmakeitem (index 2225) (type 2) (item 2785) (material 1203) )
+(initmakeitem (index 2226) (type 2) (item 2786) (material 1204) )
+(initmakeitem (index 2227) (type 2) (item 2787) (material 1204) )
+
+;장신구
+;태극
+(initmakeitem (index 3000) (type 0) (item 3018) (material 2000) )	;하급
+(initmakeitem (index 3001) (type 0) (item 3019) (material 2001) )	;중급
+(initmakeitem (index 3002) (type 0) (item 3020) (material 2002) )	;상급
+;(initmakeitem (index 3003) (type 0) (item 3021) (material 2003) )	;최상급
+;(initmakeitem (index 3004) (type 0) (item 3022) (material 2004) )	;금오태극
+
+;///////////////////////////////////////////////////////////////
+;아이템 제작 재료 정보
+; key	: initmakeitem 의 material 에서 참조하는 키값
+; material : 재료 인덱스, 필요 개수
+; money	: 제작시 필요한 자모전
+;///////////////////////////////////////////////////////////////
+;황금 무기(100 ~ )
+;참도
+(Materialinfo (key 100)	(money 880000)
+	( material	(2655 150) (2671 80)	;청동, 은
+			(2664 30) (2661 30)	;주철, 옥수
+			(2673 2)) )		;황금
+;대도
+(Materialinfo (key 101)	(money 880000)
+	( material	(2656 100) (2659 150)	;황동, 규석
+			(2664 30) (2662 12)	;주철, 수정
+			(2673 2)) )		;황금
+;맥궁
+(Materialinfo (key 102)	(money 880000)
+	( material	(2656 100) (2660 150)	;황동, 벽옥
+			(2663 60) (2668 30)	;연철, 녹주석
+			(2673 2)) )		;황금
+;지능지팡이
+(Materialinfo (key 103)	(money 880000)
+	( material	(2656 100) (2671 80)	;황동, 은
+			(2668 30)		;녹주석
+			(2665 10)		;흑철
+			(2673 2)) )		;황금
+;지혜지팡이
+(Materialinfo (key 104)	(money 880000)
+	( material	(2659 150) (2671 80)	;규석, 은
+			(2667 60)		;황옥
+			(2665 10)		;흑철
+			(2673 2)) )		;황금
+;단검
+(Materialinfo (key 105)	(money 880000)
+	( material	(2655 150) (2659 150)	;청동, 규석
+			(2658 12) (2664 30)	;백동, 주철
+			(2673 2)) )		;황금
+;지팡이
+(Materialinfo (key 106)	(money 880000)
+	( material	(2655 120) (2660 150)	;청동, 벽옥
+			(2657 50)		;적동
+			(2669 10)		;청옥
+			(2673 2)) )		;황금
+
+;혈룡 무기(200 ~ )
+;참도
+(Materialinfo (key 200) (money 4400000)
+	( material	(2656 200)		;황동
+			(2663 120) (2661 70)	;연철, 옥수
+			(2672 15)		;백금
+			(2674 4)) )		;혈석
+;대도
+(Materialinfo (key 201) (money 4400000)
+	( material	(2656 200)		;황동,
+			(2664 50) (2661 70)	;주철, 옥수
+			(2666 10)		;강철
+			(2674 4)) )		;혈석
+;맥궁
+(Materialinfo (key 202) (money 4400000)
+	( material	(2659 300)		;규석
+			(2658 25) (2668 40)	;백동, 녹주석
+			(2666 10)		;강철
+			(2674 4)) )		;혈석
+;지능지팡이
+(Materialinfo (key 203) (money 4400000)
+	( material	(2671 240)		;은
+			(2664 50) (2667 120)	;주철, 황옥
+			(2672 15)		;백금
+			(2674 4)) )		;혈석
+;지혜지팡이
+(Materialinfo (key 204) (money 4400000)
+	( material	(2655 300)		;청동
+			(2663 120) (2667 120)	;연철, 황옥
+			(2669 20)		;청옥
+			(2674 4)) )		;혈석
+;단검
+(Materialinfo (key 205) (money 4400000)
+	( material	(2671 240)		;은
+			(2657 100) (2664 50)	;적동, 주철
+			(2665 20)		;흑철
+			(2674 4)) )		;혈석
+
+;비천 무기(300 ~ )
+;참도
+(Materialinfo (key 300) (money 11000000)
+	( material	(2660 350)		;벽옥
+			(2658 35) (2667 150)	;백동, 황옥
+			(2665 28) (2672 15)	;흑철, 백금
+			(2675 6)) )		;금강석
+;대도
+(Materialinfo (key 301) (money 11000000)
+	( material	(2659 400)		;규석
+			(2657 120) (2662 38)	;적동, 수정
+			(2666 12) (2669 12)	;강철, 청옥
+			(2675 6)) )		;금강석
+;맥궁
+(Materialinfo (key 302) (money 11000000)
+	( material	(2655 400)		;청동
+			(2658 30) (2661 100)	;백동, 옥수
+			(2666 15) (2672 12)	;강철, 백금
+			(2675 6)) )		;금강석
+;지능지팡이
+(Materialinfo (key 303) (money 11000000)
+	( material	(2656 350)		;황동
+			(2664 60) (2667 150)	;주철, 황옥
+			(2666 12) (2669 30)	;강철, 청옥
+			(2675 6)) )		;금강석
+;지혜지팡이
+(Materialinfo (key 304) (money 11000000)
+	( material	(2671 300)		;은
+			(2663 130) (2668 85)	;연철, 녹주석
+			(2665 25) (2669 25)	;흑철, 청옥
+			(2675 6)) )		;금강석
+;단검
+(Materialinfo (key 305) (money 11000000)
+	( material	(2655 400)		;청동
+			(2663 150) (2668 80)	;연철, 녹주석
+			(2666 15) (2672 10)	;강철, 백금
+			(2675 6)) )		;금강석
+
+;황금 방어구(1000 ~ )
+;상의
+(Materialinfo (key 1000) (money 1760000)
+	(material	(2656 180) (2660 250)	;황동, 벽옥
+			(2661 85)		;옥수
+			(2672 15)		;백금
+			(2673 12) (2538 10)) )	;황금, 금오석
+;투구
+(Materialinfo (key 1001) (money 560000)
+	(material	(2655 250) (2671 80)	;청동, 은
+			(2664 25) (2667 60)	;주철, 황옥
+			(2673 3)) )		;황금
+;장갑
+(Materialinfo (key 1002) (money 560000)
+	(material	(2655 250) (2660 200)	;청동, 벽옥
+			(2663 60) (2667 60)	;연철, 황옥
+			(2673 3)) )		;황금
+;신발
+(Materialinfo (key 1003) (money 560000)
+	(material	(2656 100) (2659 120)	;황동, 규석
+			(2663 60) (2667 60)	;연철, 황옥
+			(2673 3)) )		;황금
+;하의
+(Materialinfo (key 1004) (money 1200000)
+	(material	(2656 150) (2659 150)	;황동, 규석
+			(2664 30)		;주철
+			(2665 15)		;흑철
+			(2673 7) (2538 8)) )	;황금, 금오석
+;혈룡 방어구(1100 ~ )
+;상의
+(Materialinfo (key 1100) (money 8800000)
+	(material	(2659 400)		;규석
+			(2664 80) (2662 45)	;주철, 수정
+			(2666 20)		;강철
+			(2674 15) (2538 15)) )	;혈석, 금오석
+;투구
+(Materialinfo (key 1101) (money 2800000)
+	(material	(2659 300)		;규석
+			(2658 25) (2667 120)	;백동, 황옥
+			(2669 22)		;청옥
+			(2674 4)) )		;혈석
+;장갑
+(Materialinfo (key 1102) (money 2800000)
+	(material	(2671 200)		;은
+			(2657 80) (2661 70)	;적동, 옥수
+			(2665 22)		;흑철
+			(2674 4)) )		;혈석
+;신발
+(Materialinfo (key 1103) (money 2800000)
+	(material	(2660 350)		;벽옥
+			(2663 120) (2662 25)	;연철, 수정
+			(2665 22)		;흑철
+			(2674 4)) )		;혈석
+;하의
+(Materialinfo (key 1104) (money 6000000)
+	(material	(2655 400)		;청동
+			(2663 180) (2667 180)	;연철, 황옥
+			(2669 35)		;청옥
+			(2674 8) (2538 12)) )	;혈석, 금오석
+;비천 방어구(1200 ~ )
+;상의
+(Materialinfo (key 1200) (money 22000000)
+	(material	(2660 450)		;벽옥
+			(2668 120)		;녹주석
+			(2666 40) (2670 40)	;강철, 홍옥
+			(2675 20) (2538 30)) )	;금강석, 금오석
+;투구
+(Materialinfo (key 1201) (money 7000000)
+	(material	(2657 120) (2663 120) (2668 85)	;적동, 연철, 녹주석
+			(2665 25) (2672 20)	;흑철, 백금
+			(2675 7)) )		;금강석
+;장갑
+(Materialinfo (key 1202) (money 7000000)
+	(material	(2656 320)		;황동
+			(2658 40) (2662 35)	;백동, 수정
+			(2666 15) (2669 28)	;강철, 청옥
+			(2675 7)) )		;금강석
+;신발
+(Materialinfo (key 1203) (money 7000000)
+	(material	(2659 320)		;규석
+			(2664 50) (2661 100)	;주철, 옥수
+			(2672 20) (2669 30)	;백금, 청옥
+			(2675 7)) )		;금강석
+;하의
+(Materialinfo (key 1204) (money 15000000)
+	(material	(2671 400)		;은
+			(2662 50)		;수정
+			(2665 30) (2670 30)	;흑철, 홍옥
+			(2675 12) (2538 20)) )	;금강석, 금오석
+
+;장신구 - 태극(2000 ~ )
+(Materialinfo (key 2000) (money 5000)
+(material	(2655 3)		;청동
+		(2659 3) (2660 1)) )	;규석, 벽옥
+
+(Materialinfo (key 2001) (money 1000000)
+(material	(2655 36)		;청동
+		(2659 36) (2660 9)	;규석, 벽옥
+		(2671 9)) )		;은
+
+(Materialinfo (key 2002) (money 14000000)
+(material	(2655 144)		;청동
+		(2659 144) (2660 24)	;규석, 벽옥
+		(2671 24) (2673 4)) )	;은, 황금
+
+;(Materialinfo (key 2003) (money 5000000)
+;(material	(2656 60)		;황동
+;		(2657 30) (2661 20)	;적동, 옥수
+;		(2672 10) (2673 10)) )	;백금, 황금
+
+;(Materialinfo (key 2004) (money 0)	;금오태극
+;(material	(3025 1)) )		;금오태극의 결정
+		
+
+;///////////////////////////////////////////////////////////////
+;장비 교환
+; index	: 교환할 장비 아이템 인덱스
+; material : (재료 인덱스, 필요 개수), 현재는 은화만 사용.
+; item	: 교환으로 얻는 아이템 인덱스
+;///////////////////////////////////////////////////////////////
+(itemexchange (index 372) (material (2427 1)) (item 2934) )	;금강 비늘갑주
+(itemexchange (index 373) (material (2427 1)) (item 2935) )	;금강 비늘갑주 투구
+(itemexchange (index 374) (material (2427 1)) (item 2936) )	;금강 비늘갑주 장갑
+(itemexchange (index 375) (material (2427 1)) (item 2937) )	;금강 비늘갑주 신발
+(itemexchange (index 376) (material (2427 1)) (item 2938) )	;금강 비늘갑주용 하의
+
+(itemexchange (index 377) (material (2427 1)) (item 2934) )	;금강갑주
+(itemexchange (index 378) (material (2427 1)) (item 2935) )	;금강갑주 투구
+(itemexchange (index 379) (material (2427 1)) (item 2936) )	;금강갑주 장갑
+(itemexchange (index 380) (material (2427 1)) (item 2937) )	;금강갑주 신발
+(itemexchange (index 381) (material (2427 1)) (item 2938) )	;금강갑주용 치마
+
+(itemexchange (index 382) (material (2427 1)) (item 2934) )	;백포 대창의
+(itemexchange (index 383) (material (2427 1)) (item 2935) )	;백포 대창의용 머리장식
+(itemexchange (index 384) (material (2427 1)) (item 2936) )	;백포 대창의 장갑
+(itemexchange (index 385) (material (2427 1)) (item 2937) )	;백포 대창의 신발
+(itemexchange (index 386) (material (2427 1)) (item 2938) )	;백포 대창의용 하의
+
+(itemexchange (index 1580) (material (2427 1)) (item 2934) )	;금강 도적 도복
+(itemexchange (index 1581) (material (2427 1)) (item 2935) )	;금강 도적 두건
+(itemexchange (index 1582) (material (2427 1)) (item 2936) )	;금강 도적 장갑
+(itemexchange (index 1583) (material (2427 1)) (item 2937) )	;금강 도적 신발
+(itemexchange (index 1584) (material (2427 1)) (item 2938) )	;금강 도적 도복하의
+
+(itemexchange (index 621) (material (2427 2)) (item 2939) )	;도깨비 철판갑주
+(itemexchange (index 622) (material (2427 2)) (item 2940) )	;도깨비 철판갑주 투구
+(itemexchange (index 623) (material (2427 2)) (item 2941) )	;도깨비 철판갑주 장갑
+(itemexchange (index 624) (material (2427 2)) (item 2942) )	;도깨비 철판갑주 신발
+(itemexchange (index 625) (material (2427 2)) (item 2943) )	;도깨비 철판갑주용 하의
+
+(itemexchange (index 626) (material (2427 2)) (item 2939) )	;도깨비 갑주
+(itemexchange (index 627) (material (2427 2)) (item 2940) )	;도깨비 갑주 투구
+(itemexchange (index 628) (material (2427 2)) (item 2941) )	;도깨비 갑주 장갑
+(itemexchange (index 629) (material (2427 2)) (item 2942) )	;도깨비 갑주 신발
+(itemexchange (index 630) (material (2427 2)) (item 2943) )	;도깨비 갑주용 치마
+
+(itemexchange (index 631) (material (2427 2)) (item 2939) )	;도깨비 대창의
+(itemexchange (index 632) (material (2427 2)) (item 2940) )	;도깨비 대창의용 머리장식
+(itemexchange (index 633) (material (2427 2)) (item 2941) )	;도깨비 대창의 장갑
+(itemexchange (index 634) (material (2427 2)) (item 2942) )	;도깨비 대창의 신발
+(itemexchange (index 635) (material (2427 2)) (item 2943) )	;도깨비 대창의용 하의
+
+(itemexchange (index 1585) (material (2427 2)) (item 2939) )	;도깨비 도적 도복
+(itemexchange (index 1586) (material (2427 2)) (item 2940) )	;도깨비 도적 두건
+(itemexchange (index 1587) (material (2427 2)) (item 2941) )	;도깨비 도적 장갑
+(itemexchange (index 1588) (material (2427 2)) (item 2942) )	;도깨비 도적 신발
+(itemexchange (index 1589) (material (2427 2)) (item 2943) )	;도깨비 도적 도복하의
+
+(itemexchange (index 457) (material (2427 1)) (item 2944) )	;금강 보검
+(itemexchange (index 458) (material (2427 1)) (item 2944) )	;고통의 금강검
+(itemexchange (index 459) (material (2427 1)) (item 2944) )	;환영 금강 보검
+
+(itemexchange (index 460) (material (2427 1)) (item 2944) )	;금강 대도
+(itemexchange (index 461) (material (2427 1)) (item 2944) )	;고통의 금강대도
+(itemexchange (index 462) (material (2427 1)) (item 2944) )	;환영 금강 대도
+
+(itemexchange (index 463) (material (2427 1)) (item 2944) )	;금강 맥궁
+(itemexchange (index 464) (material (2427 1)) (item 2944) )	;고통의 금강 맥궁
+(itemexchange (index 465) (material (2427 1)) (item 2944) )	;환영 금강 맥궁
+
+(itemexchange (index 466) (material (2427 1)) (item 2944) )	;금강 지팡이
+(itemexchange (index 467) (material (2427 1)) (item 2944) )	;고통의 금강 지팡이
+(itemexchange (index 468) (material (2427 1)) (item 2944) )	;환영 금강 지팡이
+
+(itemexchange (index 1423) (material (2427 1)) (item 2944) )	;금강 단검
+(itemexchange (index 1424) (material (2427 1)) (item 2944) )	;고통의 금강 단검
+(itemexchange (index 1425) (material (2427 1)) (item 2944) )	;환영 금강 단검
+
+(itemexchange (index 584) (material (2427 5)) (item 2945) )	;도깨비 보검
+(itemexchange (index 585) (material (2427 5)) (item 2945) )	;상급 도깨비의 보검
+(itemexchange (index 586) (material (2427 5)) (item 2945) )	;도깨비 어르신의 보검
+
+(itemexchange (index 587) (material (2427 5)) (item 2945) )	;도깨비 대도
+(itemexchange (index 588) (material (2427 5)) (item 2945) )	;상급 도깨비의 대도
+(itemexchange (index 589) (material (2427 5)) (item 2945) )	;도깨비 어르신의 대도
+
+(itemexchange (index 590) (material (2427 5)) (item 2945) )	;도깨비 맥궁
+(itemexchange (index 591) (material (2427 5)) (item 2945) )	;상급 도깨비의 맥궁
+(itemexchange (index 592) (material (2427 5)) (item 2945) )	;도깨비 어르신의 맥궁
+
+(itemexchange (index 593) (material (2427 5)) (item 2945) )	;도깨비 지팡이
+(itemexchange (index 594) (material (2427 5)) (item 2945) )	;상급 도깨비의 지팡이
+(itemexchange (index 595) (material (2427 5)) (item 2945) )	;도깨비의 어르신의 지팡이
+
+(itemexchange (index 1429) (material (2427 5)) (item 2945) )	;도깨비의 단검
+(itemexchange (index 1430) (material (2427 5)) (item 2945) )	;상급 도깨비의 단검
+
+(itemexchange (index 857) (material (2427 5)) (item 2945) )	;상급 도깨비의 보검(어르신 루팅)
+(itemexchange (index 860) (material (2427 5)) (item 2945) )	;상급 도깨비의 대도(어르신 루팅)
+(itemexchange (index 863) (material (2427 5)) (item 2945) )	;상급 도깨비의 맥궁(어르신 루팅)
+(itemexchange (index 866) (material (2427 5)) (item 2945) )	;상급 도깨비의 지팡이(어르신 루팅)
+
+(itemexchange (index 1219) (material (2427 5)) (item 2945) )	;상급 도깨비의 보검(보스이무기 루팅)
+(itemexchange (index 1222) (material (2427 5)) (item 2945) )	;상급 도깨비의 대도(보스이무기 루팅)
+(itemexchange (index 1225) (material (2427 5)) (item 2945) )	;상급 도깨비의 맥궁(보스이무기 루팅)
+(itemexchange (index 1228) (material (2427 5)) (item 2945) )	;상급 도깨비의 지팡이(보스이무기 루팅)
+
+(itemexchange (index 1504) (material (2427 2)) (item 2939) )	;도깨비 철판갑주(정령의 숲)
+(itemexchange (index 1505) (material (2427 2)) (item 2940) )	;도깨비 철판갑주 투구(정령의 숲)
+(itemexchange (index 1506) (material (2427 2)) (item 2941) )	;도깨비 철판갑주 장갑(정령의 숲)
+(itemexchange (index 1507) (material (2427 2)) (item 2942) )	;도깨비 철판갑주 신발(정령의 숲)
+(itemexchange (index 1508) (material (2427 2)) (item 2943) )	;도깨비 철판갑주용 하의(정령의 숲)
+
+(itemexchange (index 1509) (material (2427 2)) (item 2939) )	;도깨비 갑주(정령의 숲)
+(itemexchange (index 1510) (material (2427 2)) (item 2940) )	;도깨비 갑주 투구(정령의 숲)
+(itemexchange (index 1511) (material (2427 2)) (item 2941) )	;도깨비 갑주 장갑(정령의 숲)
+(itemexchange (index 1512) (material (2427 2)) (item 2942) )	;도깨비 갑주 신발(정령의 숲)
+(itemexchange (index 1513) (material (2427 2)) (item 2943) )	;도깨비 갑주용 치마(정령의 숲)
+
+(itemexchange (index 1514) (material (2427 2)) (item 2939) )	;도깨비 대창의(정령의 숲)
+(itemexchange (index 1515) (material (2427 2)) (item 2940) )	;도깨비 대창의용 머리장식(정령의 숲)
+(itemexchange (index 1516) (material (2427 2)) (item 2941) )	;도깨비 대창의 장갑(정령의 숲)
+(itemexchange (index 1517) (material (2427 2)) (item 2942) )	;도깨비 대창의 신발(정령의 숲)
+(itemexchange (index 1518) (material (2427 2)) (item 2943) )	;도깨비 대창의용 하의(정령의 숲)
+
+
+;///////////////////////////////////////////////////////////////
+; 괘 강화
+; index	: 강화 할 괘 아이템 인덱스
+; type : 강화 타입(1 : 노강->1강, 2 : 1강이상부터)
+; key : 서버 패킷 전송시 교환 정보 키값
+; material : (재료 인덱스, 필요 개수)
+;///////////////////////////////////////////////////////////////
+;노강 -> +1
+;하급
+(TrigramsEnchant (index 2954) (type 1) (key 1) (material (2954 1)) )	;건
+(TrigramsEnchant (index 2955) (type 1) (key 2) (material (2955 1)) )	;태
+(TrigramsEnchant (index 2956) (type 1) (key 3) (material (2956 1)) )	;이
+(TrigramsEnchant (index 2957) (type 1) (key 4) (material (2957 1)) )	;진
+(TrigramsEnchant (index 2958) (type 1) (key 5) (material (2958 1)) )	;손
+(TrigramsEnchant (index 2959) (type 1) (key 6) (material (2959 1)) )	;감
+(TrigramsEnchant (index 2960) (type 1) (key 7) (material (2960 1)) )	;간
+(TrigramsEnchant (index 2961) (type 1) (key 8) (material (2961 1)) )	;곤
+;중급
+(TrigramsEnchant (index 2962) (type 1) (key 11) (material (2962 1)) )
+(TrigramsEnchant (index 2963) (type 1) (key 12) (material (2963 1)) )
+(TrigramsEnchant (index 2964) (type 1) (key 13) (material (2964 1)) )
+(TrigramsEnchant (index 2965) (type 1) (key 14) (material (2965 1)) )
+(TrigramsEnchant (index 2966) (type 1) (key 15) (material (2966 1)) )
+(TrigramsEnchant (index 2967) (type 1) (key 16) (material (2967 1)) )
+(TrigramsEnchant (index 2968) (type 1) (key 17) (material (2968 1)) )
+(TrigramsEnchant (index 2969) (type 1) (key 18) (material (2969 1)) )
+;상급
+(TrigramsEnchant (index 2970) (type 1) (key 21) (material (2970 1)) )
+(TrigramsEnchant (index 2971) (type 1) (key 22) (material (2971 1)) )
+(TrigramsEnchant (index 2972) (type 1) (key 23) (material (2972 1)) )
+(TrigramsEnchant (index 2973) (type 1) (key 24) (material (2973 1)) )
+(TrigramsEnchant (index 2974) (type 1) (key 25) (material (2974 1)) )
+(TrigramsEnchant (index 2975) (type 1) (key 26) (material (2975 1)) )
+(TrigramsEnchant (index 2976) (type 1) (key 27) (material (2976 1)) )
+(TrigramsEnchant (index 2977) (type 1) (key 28) (material (2977 1)) )
+;최상급
+(TrigramsEnchant (index 2978) (type 1) (key 31) (material (2978 1)) )
+(TrigramsEnchant (index 2979) (type 1) (key 32) (material (2979 1)) )
+(TrigramsEnchant (index 2980) (type 1) (key 33) (material (2980 1)) )
+(TrigramsEnchant (index 2981) (type 1) (key 34) (material (2981 1)) )
+(TrigramsEnchant (index 2982) (type 1) (key 35) (material (2982 1)) )
+(TrigramsEnchant (index 2983) (type 1) (key 36) (material (2983 1)) )
+(TrigramsEnchant (index 2984) (type 1) (key 37) (material (2984 1)) )
+(TrigramsEnchant (index 2985) (type 1) (key 38) (material (2985 1)) )
+
+;+1 이상
+;하급
+(TrigramsEnchant (index 2986) (type 2) (key 101) (material (2954 1)) )	;건
+(TrigramsEnchant (index 2987) (type 2) (key 102) (material (2955 1)) )	;태
+(TrigramsEnchant (index 2988) (type 2) (key 103) (material (2956 1)) )	;이
+(TrigramsEnchant (index 2989) (type 2) (key 104) (material (2957 1)) )	;진
+(TrigramsEnchant (index 2990) (type 2) (key 105) (material (2958 1)) )	;손
+(TrigramsEnchant (index 2991) (type 2) (key 106) (material (2959 1)) )	;감
+(TrigramsEnchant (index 2992) (type 2) (key 107) (material (2960 1)) )	;간
+(TrigramsEnchant (index 2993) (type 2) (key 108) (material (2961 1)) )	;곤
+;중급
+(TrigramsEnchant (index 2994) (type 2) (key 111) (material (2962 1)) )
+(TrigramsEnchant (index 2995) (type 2) (key 112) (material (2963 1)) )
+(TrigramsEnchant (index 2996) (type 2) (key 113) (material (2964 1)) )
+(TrigramsEnchant (index 2997) (type 2) (key 114) (material (2965 1)) )
+(TrigramsEnchant (index 2998) (type 2) (key 115) (material (2966 1)) )
+(TrigramsEnchant (index 2999) (type 2) (key 116) (material (2967 1)) )
+(TrigramsEnchant (index 3000) (type 2) (key 117) (material (2968 1)) )
+(TrigramsEnchant (index 3001) (type 2) (key 118) (material (2969 1)) )
+;상급
+(TrigramsEnchant (index 3002) (type 2) (key 121) (material (2970 1)) )
+(TrigramsEnchant (index 3003) (type 2) (key 122) (material (2971 1)) )
+(TrigramsEnchant (index 3004) (type 2) (key 123) (material (2972 1)) )
+(TrigramsEnchant (index 3005) (type 2) (key 124) (material (2973 1)) )
+(TrigramsEnchant (index 3006) (type 2) (key 125) (material (2974 1)) )
+(TrigramsEnchant (index 3007) (type 2) (key 126) (material (2975 1)) )
+(TrigramsEnchant (index 3008) (type 2) (key 127) (material (2976 1)) )
+(TrigramsEnchant (index 3009) (type 2) (key 128) (material (2977 1)) )
+;최상급
+(TrigramsEnchant (index 3010) (type 2) (key 131) (material (2978 1)) )
+(TrigramsEnchant (index 3011) (type 2) (key 132) (material (2979 1)) )
+(TrigramsEnchant (index 3012) (type 2) (key 133) (material (2980 1)) )
+(TrigramsEnchant (index 3013) (type 2) (key 134) (material (2981 1)) )
+(TrigramsEnchant (index 3014) (type 2) (key 135) (material (2982 1)) )
+(TrigramsEnchant (index 3015) (type 2) (key 136) (material (2983 1)) )
+(TrigramsEnchant (index 3016) (type 2) (key 137) (material (2984 1)) )
+(TrigramsEnchant (index 3017) (type 2) (key 138) (material (2985 1)) )

@@ -1,0 +1,292 @@
+;장착 아이템일 경우 name 값을 정할경우 해당 모델 파일 명뒤에 _1(숫자를) 너어주시고
+;이닛 아이템에서 Action에서 기존 (14 1)에 (14 1 1)으로 넣어주면 CM_14_A01_1을 읽어 들어 텍스처를 출력합니다.
+
+;펫일 경우에는 해당 이름을 petinfo에 (custom pet_dragon)으로 넣어주면 됩니다.
+
+;npc일경우에는 
+
+;흑룡
+(switchmodel (name pet_dragon Pet Clothes) (gb P001_b1.gb P001_b2.gb) (texture P001_b1.dds P001_b1_001.dds P001_b2.dds P001_b2_001.dds))
+
+;할로윈 머리
+(switchmodel (name CT_300_H01_1 Model Clothes) (gb CW_300_H01.gb) (texture cw_300_h01.GTX cw_300_h03.GTX))
+(switchmodel (name CT_301_H01_1 Model Clothes) (gb CW_301_H01.gb) (texture cw_301_h01.GTX ))
+(switchmodel (name CT_302_H01_1 Model Clothes) (gb CW_302_H01.gb) (texture cw_302_h01.GTX ))
+(switchmodel (name CT_310_H01_1 Model Clothes) (gb CW_310_H01.gb) (texture cw_310_h01.GTX ))
+(switchmodel (name CT_311_H01_1 Model Clothes) (gb CW_311_H01.gb) (texture cw_311_h01.GTX ))
+(switchmodel (name CT_312_H01_1 Model Clothes) (gb CW_312_H01.gb) (texture cw_312_h01.GTX ))
+(switchmodel (name CT_320_H01_1 Model Clothes) (gb CW_320_H01.gb) (texture cw_320_h01.GTX ))
+(switchmodel (name CT_321_H01_1 Model Clothes) (gb CW_321_H01.gb) (texture cw_321_h01.GTX ))
+(switchmodel (name CT_322_H01_1 Model Clothes) (gb CW_322_H01.gb) (texture cw_322_h01.GTX ))
+
+
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;//산타복 
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;검정
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+;무사
+
+;상의
+(switchmodel (name CW_90_A01_1 Model Clothes) (gb CW_90_a01.gb) (texture CW_90_a01.dds CW_90_a01_Black.dds))
+;하의
+(switchmodel (name CW_90_P01_1 Model Clothes) (gb CW_90_p01.gb) (texture ))
+;장갑
+(switchmodel (name CW_90_G01_1 Model Clothes) (gb CW_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Black.dds ))
+;신발
+(switchmodel (name CW_90_S01_1 Model Clothes) (gb CW_90_s01.gb) (texture CW_90_s01.dds CW_90_s01_Black.dds ))
+;투구
+(switchmodel (name CW_90_H01_1 Model Clothes) (gb CW_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Black.dds ))
+
+;주술사
+;상의
+(switchmodel (name CR_90_A01_1 Model Clothes) (gb CR_90_a01.gb) (texture CR_90_a02.dds CR_90_a02_Black.dds))
+;하의
+(switchmodel (name CR_90_P01_1 Model Clothes) (gb CR_90_p01.gb) (texture CR_90_P01.dds CR_90_P01_Black.dds ))
+;장갑
+(switchmodel (name CR_90_G01_1 Model Clothes) (gb CR_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Black.dds ))
+;신발
+(switchmodel (name CR_90_S01_1 Model Clothes) (gb CR_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Black.dds ))
+;투구
+(switchmodel (name CR_90_H01_1 Model Clothes) (gb CR_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Black.dds ))
+
+;궁수
+
+;상의
+(switchmodel (name CM_90_A01_1 Model Clothes) (gb CM_90_a01.gb) (texture CM_90_a02.dds CM_90_a02_Black.dds))
+;하의
+(switchmodel (name CM_90_P01_1 Model Clothes) (gb CM_90_p01.gb) (texture CM_90_a02.dds CM_90_a02_Black.dds ))
+;장갑
+(switchmodel (name CM_90_G01_1 Model Clothes) (gb CM_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Black.dds ))
+;신발
+(switchmodel (name CM_90_S01_1 Model Clothes) (gb CM_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Black.dds ))
+;투구
+(switchmodel (name CM_90_H01_1 Model Clothes) (gb CM_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Black.dds ))
+
+;도적
+
+;상의
+(switchmodel (name CT_90_A01_1 Model Clothes) (gb CT_90_a01.gb) (texture CT_90_a02.dds CT_90_a02_Black.dds))
+;하의
+(switchmodel (name CT_90_P01_1 Model Clothes) (gb CT_90_p01.gb) (texture CT_90_a02.dds CT_90_a02_Black.dds CT_90_p02.dds CT_90_p02_Black.dds ))
+;장갑
+(switchmodel (name CT_90_G01_1 Model Clothes) (gb CT_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Black.dds ))
+;신발
+(switchmodel (name CT_90_S01_1 Model Clothes) (gb CT_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Black.dds ))
+;투구
+(switchmodel (name CT_90_H01_1 Model Clothes) (gb CT_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Black.dds ))
+
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;노랑
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+;무사
+
+;상의
+(switchmodel (name CW_90_A01_2 Model Clothes) (gb CW_90_a01.gb) (texture CW_90_a01.dds CW_90_a01_Yellow.dds))
+;하의
+(switchmodel (name CW_90_P01_2 Model Clothes) (gb CW_90_p01.gb) (texture ))
+;장갑
+(switchmodel (name CW_90_G01_2 Model Clothes) (gb CW_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Yellow.dds ))
+;신발
+(switchmodel (name CW_90_S01_2 Model Clothes) (gb CW_90_s01.gb) (texture CW_90_s01.dds CW_90_s01_Yellow.dds ))
+;투구
+(switchmodel (name CW_90_H01_2 Model Clothes) (gb CW_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Yellow.dds ))
+
+;주술사
+;상의
+(switchmodel (name CR_90_A01_2 Model Clothes) (gb CR_90_a01.gb) (texture CR_90_a02.dds CR_90_a02_Yellow.dds))
+;하의
+(switchmodel (name CR_90_P01_2 Model Clothes) (gb CR_90_p01.gb) (texture CR_90_P01.dds CR_90_P01_Yellow.dds ))
+;장갑
+(switchmodel (name CR_90_G01_2 Model Clothes) (gb CR_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Yellow.dds ))
+;신발
+(switchmodel (name CR_90_S01_2 Model Clothes) (gb CR_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Yellow.dds ))
+;투구
+(switchmodel (name CR_90_H01_2 Model Clothes) (gb CR_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Yellow.dds ))
+
+;궁수
+
+;상의
+(switchmodel (name CM_90_A01_2 Model Clothes) (gb CM_90_a01.gb) (texture CM_90_a02.dds CM_90_a02_Yellow.dds))
+;하의
+(switchmodel (name CM_90_P01_2 Model Clothes) (gb CM_90_p01.gb) (texture CM_90_a02.dds CM_90_a02_Yellow.dds ))
+;장갑
+(switchmodel (name CM_90_G01_2 Model Clothes) (gb CM_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Yellow.dds ))
+;신발
+(switchmodel (name CM_90_S01_2 Model Clothes) (gb CM_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Yellow.dds ))
+;투구
+(switchmodel (name CM_90_H01_2 Model Clothes) (gb CM_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Yellow.dds ))
+
+;도적
+
+;상의
+(switchmodel (name CT_90_A01_2 Model Clothes) (gb CT_90_a01.gb) (texture CT_90_a02.dds CT_90_a02_Yellow.dds))
+;하의
+(switchmodel (name CT_90_P01_2 Model Clothes) (gb CT_90_p01.gb) (texture CT_90_a02.dds CT_90_a02_Yellow.dds CT_90_p02.dds CT_90_p02_Yellow.dds ))
+;장갑
+(switchmodel (name CT_90_G01_2 Model Clothes) (gb CT_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Yellow.dds ))
+;신발
+(switchmodel (name CT_90_S01_2 Model Clothes) (gb CT_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Yellow.dds ))
+;투구
+(switchmodel (name CT_90_H01_2 Model Clothes) (gb CT_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Yellow.dds ))
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;초록
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+;무사
+
+;상의
+(switchmodel (name CW_90_A01_3 Model Clothes) (gb CW_90_a01.gb) (texture CW_90_a01.dds CW_90_a01_Green.dds))
+;하의
+(switchmodel (name CW_90_P01_3 Model Clothes) (gb CW_90_p01.gb) (texture ))
+;장갑
+(switchmodel (name CW_90_G01_3 Model Clothes) (gb CW_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Green.dds ))
+;신발
+(switchmodel (name CW_90_S01_3 Model Clothes) (gb CW_90_s01.gb) (texture CW_90_s01.dds CW_90_s01_Green.dds))
+;투구
+(switchmodel (name CW_90_H01_3 Model Clothes) (gb CW_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Green.dds ))
+
+;주술사
+;상의
+(switchmodel (name CR_90_A01_3 Model Clothes) (gb CR_90_a01.gb) (texture CR_90_a02.dds CR_90_a02_Green.dds))
+;하의
+(switchmodel (name CR_90_P01_3 Model Clothes) (gb CR_90_p01.gb) (texture CR_90_P01.dds CR_90_P01_Green.dds ))
+;장갑
+(switchmodel (name CR_90_G01_3 Model Clothes) (gb CR_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Green.dds ))
+;신발
+(switchmodel (name CR_90_S01_3 Model Clothes) (gb CR_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Green.dds ))
+;투구
+(switchmodel (name CR_90_H01_3 Model Clothes) (gb CR_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Green.dds ))
+
+;궁수
+
+;상의
+(switchmodel (name CM_90_A01_3 Model Clothes) (gb CM_90_a01.gb) (texture CM_90_a02.dds CM_90_a02_Green.dds))
+;하의
+(switchmodel (name CM_90_P01_3 Model Clothes) (gb CM_90_p01.gb) (texture CM_90_a02.dds CM_90_a02_Green.dds ))
+;장갑
+(switchmodel (name CM_90_G01_3 Model Clothes) (gb CM_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Green.dds ))
+;신발
+(switchmodel (name CM_90_S01_3 Model Clothes) (gb CM_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Green.dds ))
+;투구
+(switchmodel (name CM_90_H01_3 Model Clothes) (gb CM_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Green.dds ))
+
+;도적
+
+;상의
+(switchmodel (name CT_90_A01_3 Model Clothes) (gb CT_90_a01.gb) (texture CT_90_a02.dds CT_90_a02_Green.dds))
+;하의
+(switchmodel (name CT_90_P01_3 Model Clothes) (gb CT_90_p01.gb) (texture CT_90_a02.dds CT_90_a02_Green.dds CT_90_p02.dds CT_90_p02_Green.dds ))
+;장갑
+(switchmodel (name CT_90_G01_3 Model Clothes) (gb CT_90_g01.gb) (texture CT_90_g01.dds CT_90_g01_Green.dds ))
+;신발
+(switchmodel (name CT_90_S01_3 Model Clothes) (gb CT_90_s01.gb) (texture CT_90_s01.dds CT_90_s01_Green.dds ))
+;투구
+(switchmodel (name CT_90_H01_3 Model Clothes) (gb CT_90_H01.gb) (texture CT_90_h01.dds CT_90_h01_Green.dds ))
+
+
+
+
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;	PET
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;흑룡
+(switchmodel (name pet_dragon Pet Clothes) (gb P001_b1.gb P001_b2.gb) (texture P001_b1.dds P001_b1_001.dds P001_b2.dds P001_b2_001.dds))
+;적룡
+(switchmodel (name pet_red_dragon Pet Clothes) (gb P001_b1.gb P001_b2.gb) (texture P001_b1.dds P001_b1_002.dds P001_b2.dds P001_b2_002.dds))
+
+;청룡 + 백호
+(switchmodel (name mixpet_WhiteDragon_PVE Pet Clothes)	(gb P001_b1.gb P001_b2.gb)		(texture P001_b1.dds P001_b1_mix_P002.dds P001_b2.dds P001_b2_mix_P002.dds))
+(switchmodel (name mixpet_WhiteDragon_PVP Pet Clothes)	(gb P005_b1.gb P005_b2.gb P005_b3.gb)	(texture P001_b1.dds P001_b1_mix_P002.dds P001_b2.dds P001_b2_mix_P002.dds))
+;청룡 + 현무
+(switchmodel (name mixpet_BlackDragon_PVE Pet Clothes)	(gb P001_b1.gb P001_b2.gb)		(texture P001_b1.dds P001_b1_mix_P003.dds P001_b2.dds P001_b2_mix_P003.dds))
+(switchmodel (name mixpet_BlackDragon_PVP Pet Clothes)	(gb P005_b1.gb P005_b2.gb P005_b3.gb)	(texture P001_b1.dds P001_b1_mix_P003.dds P001_b2.dds P001_b2_mix_P003.dds))
+;청룡 + 주작
+(switchmodel (name mixpet_RedDragon_PVE Pet Clothes)	(gb P001_b1.gb P001_b2.gb)		(texture P001_b1.dds P001_b1_mix_P004.dds P001_b2.dds P001_b2_mix_P004.dds))
+(switchmodel (name mixpet_RedDragon_PVP Pet Clothes)	(gb P005_b1.gb P005_b2.gb P005_b3.gb)	(texture P001_b1.dds P001_b1_mix_P004.dds P001_b2.dds P001_b2_mix_P004.dds))
+
+;백호 + 청룡
+(switchmodel (name mixpet_BlueTiger_PVE Pet Clothes)	(gb P002_b1.gb P002_b2.gb)		(texture P002_b1.dds P002_b1_mix_P001.dds P002_b2.dds P002_b2_mix_P001.dds))
+(switchmodel (name mixpet_BlueTiger_PVP Pet Clothes)	(gb P006_b1.gb P006_b2.gb P006_b3.gb)	(texture P002_b1.dds P002_b1_mix_P001.dds P002_b2.dds P002_b2_mix_P001.dds))
+;백호 + 현무
+(switchmodel (name mixpet_BlackTiger_PVE Pet Clothes)	(gb P002_b1.gb P002_b2.gb)		(texture P002_b1.dds P002_b1_mix_P003.dds P002_b2.dds P002_b2_mix_P003.dds))
+(switchmodel (name mixpet_BlackTiger_PVP Pet Clothes)	(gb P006_b1.gb P006_b2.gb P006_b3.gb)	(texture P002_b1.dds P002_b1_mix_P003.dds P002_b2.dds P002_b2_mix_P003.dds))
+;백호 + 주작
+(switchmodel (name mixpet_RedTiger_PVE Pet Clothes)	(gb P002_b1.gb P002_b2.gb)		(texture P002_b1.dds P002_b1_mix_P004.dds P002_b2.dds P002_b2_mix_P004.dds))
+(switchmodel (name mixpet_RedTiger_PVP Pet Clothes)	(gb P006_b1.gb P006_b2.gb P006_b3.gb)	(texture P002_b1.dds P002_b1_mix_P004.dds P002_b2.dds P002_b2_mix_P004.dds))
+
+;현무 + 청룡
+(switchmodel (name mixpet_BlueTortoise_PVE Pet Clothes)	(gb P003_b1.gb P003_b2.gb P003_b3.gb)	(texture P003_b1.dds P003_b1_mix_P001.dds P003_b2.dds P003_b2_mix_P001.dds))
+(switchmodel (name mixpet_BlueTortoise_PVP Pet Clothes)	(gb P007_b1.gb P007_b2.gb P007_b3.gb)	(texture P003_b1.dds P003_b1_mix_P001.dds P003_b2.dds P003_b2_mix_P001.dds))
+;현무 + 백호
+(switchmodel (name mixpet_WhiteTortoise_PVE Pet Clothes)(gb P003_b1.gb P003_b2.gb P003_b3.gb)	(texture P003_b1.dds P003_b1_mix_P002.dds P003_b2.dds P003_b2_mix_P002.dds))
+(switchmodel (name mixpet_WhiteTortoise_PVP Pet Clothes)(gb P007_b1.gb P007_b2.gb P007_b3.gb)	(texture P003_b1.dds P003_b1_mix_P002.dds P003_b2.dds P003_b2_mix_P002.dds))
+;현무 + 주작
+(switchmodel (name mixpet_RedTortoise_PVE Pet Clothes)	(gb P003_b1.gb P003_b2.gb P003_b3.gb)	(texture P003_b1.dds P003_b1_mix_P004.dds P003_b2.dds P003_b2_mix_P004.dds))
+(switchmodel (name mixpet_RedTortoise_PVP Pet Clothes)	(gb P007_b1.gb P007_b2.gb P007_b3.gb)	(texture P003_b1.dds P003_b1_mix_P004.dds P003_b2.dds P003_b2_mix_P004.dds))
+
+;주작 + 청룡
+(switchmodel (name mixpet_Blue_Bird_PVE Pet Clothes)	(gb P004_b1.gb )		(texture P004_b1.dds P004_b1_mix_P001.dds ))
+(switchmodel (name mixpet_Blue_Bird_PVP Pet Clothes)	(gb P008_b1.gb P008_b2.gb )	(texture P004_b1.dds P004_b1_mix_P001.dds ))
+;주작 + 백호
+(switchmodel (name mixpet_White_Bird_PVE Pet Clothes)	(gb P004_b1.gb )		(texture P004_b1.dds P004_b1_mix_P002.dds ))
+(switchmodel (name mixpet_White_Bird_PVP Pet Clothes)	(gb P008_b1.gb P008_b2.gb )	(texture P004_b1.dds P004_b1_mix_P002.dds ))
+;주작 + 현무
+(switchmodel (name mixpet_Black_Bird_PVE Pet Clothes)	(gb P004_b1.gb )		(texture P004_b1.dds P004_b1_mix_P003.dds ))
+(switchmodel (name mixpet_Black_Bird_PVP Pet Clothes)	(gb P008_b1.gb P008_b2.gb )	(texture P004_b1.dds P004_b1_mix_P003.dds ))
+
+
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;//	NPC
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;npc도천
+(switchmodel (name dochun1 Npc clothes) (gb N003_B1.gb ) (texture N003.dds N003_001.dds))
+;2012 크리스마스 이벤트 그린산타 / 골드산타
+(switchmodel (name GREEN_SANTA Npc clothes) (gb N120_b1.gb N120_b2.gb N120_b3.gb) (texture N120_b1.dds N120_b1.gtx N120_b2.dds N120_b2_Green.gtx N120_b3.dds N120_b3.gtx))
+(switchmodel (name GOLD_SANTA Npc clothes) (gb N120_b1.gb N120_b2.gb N120_b3.gb) (texture N120_b1.dds N120_b1.gtx N120_b2.dds N120_b2_Gold.gtx N120_b3.dds N120_b3.gtx))
+;2012 크리스마스 이벤트 블랙 산타 
+(switchmodel (name BLACK_SANTA Npc clothes) (gb N120_b1.gb N120_b2.gb N120_b3.gb) (texture N120_b1.dds N120_b1.gtx N120_b2.dds N120_b2_Black.gtx N120_b3.dds N120_b3.gtx))
+
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;//	MONSTER
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;데바의 그림자 텍스쳐
+(switchmodel	(name M_859_1 Monster Clothes)
+	(gb M859_b1.gb M859_b2.gb M859_b3.gb M859_b4.gb M859_b5.gb M859_b6.gb )
+	(texture M859_b1.dds M859_b1_Gray.gtx M859_b2.dds M859_b2_Gray.gtx M859_b3.dds M859_b3_Gray.gtx M859_b4.dds M859_b4_Gray.gtx M859_b5.dds M859_b5_Gray.gtx)
+)
+;13년 크리스마스 이벤트 빨간 산타몬스터 
+(switchmodel	(name M_898_RED Monster Clothes)
+	(gb M898_b1.gb M898_b2.gb)
+	(texture M898_b1.dds M898_b1.gtx M898_b2.dds M898_b2_Red.gtx )
+)
+
+
+
+
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;//	이펙트 스위치(이펙트종류 (원본이펙트명_1 바꿀이펙트명_1) (원본이펙트명_2 바꿀이펙트명_2) (...) )
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;데바의 그림자
+(switcheffect (key 1)	(fx	(M859_2 M859_2_Gray)	;스텐드 - 방패 일반공격
+				(M859_4_2 M859_4_2_Gray);일반공격 - 검
+				(M859_5 M859_5_Gray)	;일반공격 - 방패
+				(M859_6 M859_6_Gray)	;일반공격 - 꼬리
+				(M859_8 M859_8_Gray)	;스텐드- 몸통
+				(M859_9 M859_9_Gray)	;스킬 - 화염회오리
+				(M859_10 M859_10_Gray)	;스텐드 - 검
+				(M859_11 M859_11_Gray)	;스킬 - 방패 화염
+			)
+)
+
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;//	모션 스위치	(motion (원본모션파일이름 액션 모션 액션서브) (....))
+;////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+;데바의 그림자 T196_7_A_06 <-> T196_8_A_2
+(switchmotion (key 1) (motion (T196_7_A_06 8 A 2) (T196_8_A_02 7 A 6)) )

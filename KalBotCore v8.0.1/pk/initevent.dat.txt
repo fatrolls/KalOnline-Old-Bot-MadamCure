@@ -1,0 +1,214 @@
+; 일라이어 등장 시퀀스
+( sequence 0
+
+	; 일라이어    id 1
+	; 공격 소환수 id 2
+	; 방어 소환수 id 3
+
+	; 대사 & 생성
+	( trigger 0
+	    ( event ( 0 15000 ) )
+		( action ( 0 "I have a supernatural feeling that something invisible is trying to embody." ) )
+		( action ( 1 2 573 1 2651 4075 2898 180 ) )
+	)
+
+	; 대사 & 대사 스킬
+	( trigger 1
+	    ( event ( 0 18000 ) )
+		( action ( 0 "Finally here you come. I have waited so long... about 100 years." ) )
+		( action ( 2 2 1 128 0 ) )
+	)
+
+	; 대사 & 대사 스킬
+	( trigger 2
+	    ( event ( 0 21000 ) )
+		( action ( 0 "You look very tired. I know the way that you had come here was not easy." ) )
+		( action ( 2 2 1 128 0 ) )
+	)
+
+	; 대사 & 대사 스킬
+	( trigger 3
+	    ( event ( 0 24000 ) )
+		( action ( 0 "Then, I'd like to put you through the final wringer. I will estimate" ) )
+		( action ( 0 "whether you have a qualification and an ability to defeat energy of evil." ) )
+		( action ( 2 2 1 128 0 ) )
+	)
+
+	; 대사 & 대사 스킬
+	( trigger 4
+	    ( event ( 0 34000 ) )
+		( action ( 0 "If you pass it, I will pave the way to the subject of energy of evil." ) )
+		( action ( 2 2 1 128 0 ) )
+	)
+
+	; 대사 & 대사 스킬
+	( trigger 5
+	    ( event ( 0 39000 ) )
+		( action ( 0 "I hope you will pass it and annihilate the energy of evil which has been existed " ) )
+		( action ( 0 "since the first year of an era and thrown into confusion, so save the world finally." ) )
+		( action ( 2 2 1 128 0 ) )
+	)
+
+	; 소환 스킬
+	( trigger 6
+	    ( event ( 0 44000 ) )
+		( action ( 2 2 1 129 0 ) )
+	)
+
+	; 소환 몬스터 생성
+	( trigger 7
+	    ( event ( 0 54000 ) )
+		( action ( 1 2 700 2 2578 3959 2898 180 ) )
+		( action ( 1 2 701 3 2713 3956 2898 180 ) )
+	)
+
+	; 이동
+	( trigger 8
+	    ( event ( 0 57000 ) )
+		( action ( 3 2 1 2651 4075 2898 2649 4654 2978 180 60 ) )
+	)
+
+	;뒤돌아 이동
+	( trigger 9
+	    ( event ( 0 67000 ) )
+		( action ( 3 2 1 2649 4654 2978 2650 4641 2978 180 60 ) )
+	)
+
+	; 보호막 스킬
+	( trigger 10
+	    ( event ( 0 69000 ) )
+		( action ( 2 2 1 130 0 ) )
+	)
+
+	; 보호막 상태로 변경
+	( trigger 11
+	    ( event ( 0 70500 ) )
+		( action ( 4 2 1 16 ) )
+	)
+
+	; 시퀀스 종료 시 일라이어 & 소환수 삭제
+	( trigger 12
+		( condition ( 1 ) )
+		( action ( 5 2 1 ) )
+		( action ( 5 2 2 ) )
+		( action ( 5 2 3 ) )
+	)
+)
+
+; 일라이어 퇴장 시퀀스
+( sequence 1
+
+	; 대사 & 대사 스킬
+	( trigger 0
+	    ( event ( 0 2000 ) )
+		( action ( 0 "You successfully passed the final test of the tower." ) )
+		( action ( 2 3 573 128 0 ) )
+	)
+
+	; 대사 & 대사 스킬
+	( trigger 1
+	    ( event ( 0 5000 ) )
+		( action ( 0 "The new way ahead of you would lead you to more dread," ) )
+		( action ( 0 "but the future of the world should not be so dim in view of your passion and struggle." ) )
+		( action ( 2 3 573 128 0 ) )
+	)
+
+	; 대사 & 대사 스킬
+	( trigger 2
+	    ( event ( 0 13000 ) )
+		( trigger ( 0 13000 ) )
+		( action ( 0 "I'll take a break waiting for other brave men. Cross your fingers, guys." ) )
+		( action ( 2 3 573 128 0 ) )
+	)
+)
+
+; 지옥도 축생 지옥의 수문장 입장 시퀀스
+( sequence 2
+
+	; 대사
+	( trigger 0
+	    ( event ( 0 0 ) )
+		( action ( 0 "You fools, if you think you can save ＂Sol-gue＂, you’re mistaken!" ) )
+	)
+
+	; 대사
+	( trigger 1
+	    ( event ( 0 3000 ) )
+		( action ( 0 "Die and blame your own stupidity and weakness!" ) )
+	)
+
+	; 시퀀스 자동 종료
+	( trigger 2
+	    ( event ( 0 5000 ) )
+		( action ( 6 2 ) )
+	)
+)
+
+; 지옥도 축생 지옥의 수문장 퇴장 시퀀스
+( sequence 3
+
+	; 대사
+	( trigger 0
+	    ( event ( 0 0 ) )
+		( action ( 0 "Waah…. Arrrgh… Awww…. I can't die yet..." ) )
+	)
+
+	; 대사
+	( trigger 1
+	    ( event ( 0 3000 ) )
+		( action ( 0 "This is not the end. Deeper inside, my comrades await your arrival." ) )
+		( action ( 0 "It'll be too late to regret your stupid choice." ) )
+	)
+
+	; 시퀀스 자동 종료
+	( trigger 2
+	    ( event ( 0 5000 ) )
+		( action ( 6 3 ) )
+	)
+)
+
+; 지옥도 수라 지옥의 악귀녀 입장 시퀀스
+( sequence 4
+
+	; 대사
+	( trigger 0
+	    ( event ( 0 0 ) )
+		( action ( 0 "Haha~, you have finally arrived here in search of Sol-gue!" ) )
+		( action ( 0 "However, the only thing that is waiting for you is the hellfire of Sura." ) )
+	)
+
+	; 대사
+	( trigger 1
+	    ( event ( 0 3000 ) )
+		( action ( 0 "I'll cut your all arms and legs away with my Hell of Sickle!!!" ) )
+	)
+
+	; 시퀀스 자동 종료
+	( trigger 2
+	    ( event ( 0 5000 ) )
+		( action ( 6 2 ) )
+	)
+)
+
+; 지옥도 수라 지옥의 악귀녀 퇴장 시퀀스
+( sequence 5
+
+	; 대사
+	( trigger 0
+	    ( event ( 0 0 ) )
+		( action ( 0 "Yipes!!! To my chagrin, I got defeated by feeble and dull-headed fellows!!!" ) )
+	)
+
+	; 대사
+	( trigger 1
+	    ( event ( 0 3000 ) )
+		( action ( 0 "Bear in mind that this is not the final adversity for you." ) )
+		( action ( 0 "I'll pray you should sink into the depth of misery!!!" ) )
+	)
+
+	; 시퀀스 자동 종료
+	( trigger 2
+	    ( event ( 0 5000 ) )
+		( action ( 6 3 ) )
+	)
+)
